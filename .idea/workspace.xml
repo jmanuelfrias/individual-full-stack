@@ -5,40 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Pantalla basica implementada y primer intento del details.&#10;Todavía falta que la avilability vaya por cada uno&#10;El dispatcher is null error sigue dando por culo">
-      <change afterPath="$PROJECT_DIR$/individual/src/components/Book.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/components/BookDetails.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/components/BookList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/components/ErrorNotification.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/components/Loading.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/components/NavBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/components/SinopsisPopup.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/context/LibraryContext.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/hooks/useRedirection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/resources/data/NavBarData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/resources/images/Infinity-1s-200px.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/resources/images/Spinner-0.5s-314px.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/routes/GlobalRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/styles/Book.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/styles/BookDetails.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/styles/BookList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/styles/Header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/styles/Layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/styles/Loading.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/styles/Overview.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/styles/navBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/styles/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/views/Landing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/views/NotFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/individual/src/views/Overview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/Book.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/ErrorNotification.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/Loading.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/NavBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/SinopsisPopup.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/context/LibraryContext.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/resources/images/Infinity-1s-200px.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/resources/images/Spinner-0.5s-314px.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Book.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/BookDetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/BookList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Loading.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Overview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/navBar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/views/BookLanding.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/views/BookOverview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/views/Landing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/views/NotFound.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/individual/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/individual/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/individual/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/src/context/StreamingContext.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/src/hooks/useFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/hooks/useBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual/src/views/Overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/views/Overview.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -74,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/xemaf/WebstormProjects/forked/individual-full-stack/individual/src/styles",
+    "last_opened_file_path": "C:/Users/xemaf/WebstormProjects/forked/individual-full-stack/2individual/src/views",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -86,10 +83,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\styles" />
-      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\hooks" />
-      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\components" />
-      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\views" />
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src\views" />
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src\hooks" />
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src\context" />
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src" />
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\resources\images" />

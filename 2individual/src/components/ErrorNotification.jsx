@@ -1,0 +1,1 @@
+//Mini container que salga en rojo en una esquina diciendo que ha ahbido un error
