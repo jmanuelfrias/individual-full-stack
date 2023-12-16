@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import '../styles/styles.css';
 import '../styles/Overview.css'
 import {Book} from "../components/Book";
-import {LinearProgress} from "@mui/material";
+
 import {BookList} from "../components/BookList";
 import {LibraryContext} from "../context/LibraryContext";
 

@@ -6,12 +6,12 @@ import useRedirection from "../hooks/useRedirection";
 
 function BookLanding() {
 
-    useRedirection("/books", 3000); // Redireccionamos a la vista de restaurantes en 3 segundos
+    useRedirection("/home", 3000);
 
     return (
         <div className="landing">
-            <Link to={"/books"}> {/* Añadimos un enlace a la vista de restaurantes */}
-                <h1>Bienvenidos a la biblioteca</h1>
+            <Link to={"/home"}>
+                <h1>Cargando Librería</h1>
             </Link>
             <Loading />
 

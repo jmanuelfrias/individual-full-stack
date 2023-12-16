@@ -4,6 +4,7 @@ import {SidebarData} from "../resources/data/NavBarData";
 import '../styles/navBar.css'
 
 
+
 export const NavBar = () => {
     const [sidebar, setSidebar] = useState(false);
 
@@ -15,8 +16,8 @@ export const NavBar = () => {
                     return (
                          <Link to={item.path}>
                                     <div className="menu-items-box">
-                                    <img src={item.icon} className="items-box-image"/>
-                                    <p>{item.title}</p>
+                                    <img className="items-box-image" src={item.icon} alt="icono"></img>
+                                    <p className="items-box-text">{item.title}</p>
                                     </div>
                          </Link>
                     );

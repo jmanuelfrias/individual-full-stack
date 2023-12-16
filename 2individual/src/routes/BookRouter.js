@@ -8,14 +8,18 @@ import {NavBar} from "../components/NavBar";
 import '../styles/Layout.css'
 import {BookDetails} from "../components/BookDetails";
 import BookLanding from "../views/BookLanding";
+import {BooksHelp} from "../views/BooksHelp";
+import {BookHomePage} from "../views/BookHomePage";
 
 function BookRouter() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<BookLanding />} />
+                <Route path="/home" element={<Layout><BookHomePage /></Layout>} />
                 <Route path="/books" element={<Layout><BookOverview /></Layout>} />
                 <Route path="/books/:bookId" element={<Layout><BookDetails /></Layout>} />
+                <Route path="/help" element={<Layout><BooksHelp /></Layout>} />
                 <Route path="*" element={<Layout><NotFound /></Layout>} />
             </Routes>
         </BrowserRouter>

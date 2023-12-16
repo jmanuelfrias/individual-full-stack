@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import GlobalRouter from "./routes/GlobalRouter";
 import {RestaurantContext} from "./context/RestaurantContext";
 import {Footer} from "./components/Footer";
@@ -20,8 +20,15 @@ function App() {
 
     const books = useBooks();
 
+    //Funciones para actualizar el valor del filtro guardado
+    const [selectedFilter, setSelectedFilter] = useState('');
+    let updateSelectedFilter = useCallback((newValue) => {
+        setSelectedFilter(newValue);
+    }, []);
+
+
     return (
-        <LibraryContext.Provider value={{books}}>
+        <LibraryContext.Provider value={{books , selectedFilter , updateSelectedFilter}}>
             <BookRouter></BookRouter>
             <Footer />
         </LibraryContext.Provider>
