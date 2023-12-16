@@ -1,0 +1,14 @@
+.bookcard {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    color: #f0e68c;
+}
+
+.bookcard-caratula{
+    width: 200px;
+    height: 250px;
+}

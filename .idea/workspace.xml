@@ -4,11 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Pantalla basica implementada y primer intento del details.&#10;Todavía falta que la avilability vaya por cada uno&#10;El dispatcher is null error sigue dando por culo">
+      <change afterPath="$PROJECT_DIR$/individual/src/components/Book.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/components/BookDetails.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/components/BookList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/components/ErrorNotification.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/components/Loading.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/components/NavBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/components/SinopsisPopup.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/context/LibraryContext.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/hooks/useRedirection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/resources/data/NavBarData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/resources/images/Infinity-1s-200px.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/resources/images/Spinner-0.5s-314px.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/routes/GlobalRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/styles/Book.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/styles/BookDetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/styles/BookList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/styles/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/styles/Layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/styles/Loading.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/styles/Overview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/styles/navBar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/styles/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/views/Landing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/views/NotFound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/individual/src/views/Overview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/individual/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/individual/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual/src/context/StreamingContext.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual/src/hooks/useFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/hooks/useBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -16,9 +59,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2Z6B5rULK5hBjxDTBN8ZXdBEVmb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,6 +74,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/xemaf/WebstormProjects/forked/individual-full-stack/individual/src/styles",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -39,6 +84,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\styles" />
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\hooks" />
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\components" />
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\resources\images" />
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\individual\src\resources" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,10 +105,16 @@
       <option name="presentableId" value="Default" />
       <updated>1701732468288</updated>
       <workItem from="1701732469712" duration="624000" />
+      <workItem from="1702493466944" duration="6577000" />
+      <workItem from="1702640235525" duration="15130000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pantalla basica implementada y primer intento del details.&#10;Todavía falta que la avilability vaya por cada uno&#10;El dispatcher is null error sigue dando por culo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pantalla basica implementada y primer intento del details.&#10;Todavía falta que la avilability vaya por cada uno&#10;El dispatcher is null error sigue dando por culo" />
   </component>
 </project>
