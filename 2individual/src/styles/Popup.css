@@ -6,6 +6,7 @@
 
 .botones-datepicker {
     margin: 0px;
+    display: flex;
 }
 
 
@@ -15,4 +16,9 @@
 .custom-datepicker-popper{
     width: 200px; /* Set the desired width */
     max-height: 200px; /* Set the maximum height if needed */
+}
+
+.error{
+    color:red;
+    margin-left: 10px;
 }

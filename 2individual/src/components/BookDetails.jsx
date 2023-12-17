@@ -26,11 +26,15 @@ export const BookDetails = () => {
     };
 
     const handleBorrow = (selectedDate) => {
-        // Update the availability with the bookId and the selected date
-        // Assuming updateBookAvailability is a function that updates book availability
-        updateBookAvailability(book.id, book.availability - 1,selectedDate,false);
-        // Optionally, you can also log the updated availability
-        console.log(`Book ${book.title} availability updated to ${book.availability - 1}`);
+        const today = new Date();
+
+        const day = String(today.getDate()).padStart(2, '0');
+        const month = String(today.getMonth() + 1).padStart(2, '0'); // Month is zero-based, so we add 1
+        const year = today.getFullYear();
+
+        const todayFormatted = `${day}/${month}/${year}`;
+
+         updateBookAvailability(book.id, book.availability - 1,selectedDate, todayFormatted ,false);
     };
 
 
@@ -47,12 +51,12 @@ export const BookDetails = () => {
                     <p>Sinopsis: {book.sinopsis}</p>
                 </div>
                 <p>Género: {book.genre}</p>
-                <p>Calificación: {book.puntuation} / 10</p>
+                <p>Calificación: {book.puntuation} / 5</p>
                 <p>Volumenes disponibles : {book.availability}</p>
 
                 {/*Ahora tengo control de mirar si el libro está prestado al usuario o no*/}
                 {book.loaned === "no" && (
-                   <div>
+                   <div className="information-handling">
                     <button onClick={handleBorrowButtonClick}>Coger prestado el libro</button>
                     {isPopupVisible && <BookPopUp onClose={() => handlePopupClose(setPopupVisible)} onBorrow={handleBorrow} />}
                    </div>

@@ -6,10 +6,19 @@
     padding-bottom: 20px;
     margin-left: 20px;
     color: #f0e68c;
-    max-width: 10px;
+    min-width: 250px;
 }
 
 .bookcard-caratula{
     width: 200px;
     height: 250px;
+}
+
+.bookcard-text{
+    width: 240px;
+}
+
+.bookcard-title {
+    margin-right: 7px;
+    height: 44px;
 }

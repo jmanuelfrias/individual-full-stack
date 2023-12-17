@@ -9,26 +9,22 @@ export const Book= ({id,title, yearPublication, author, caratula, availability, 
     const book = books.find(r => r.id === id);
 
     const handleDevolution = () => {
-        // Update the availability with the bookId and the selected date
-        // Assuming updateBookAvailability is a function that updates book availability
-        updateBookAvailability(book.id, book.availability + 1,"",true);
-        // Optionally, you can also log the updated availability
-        console.log(`Book ${book.title} availability updated to ${book.availability + 1}`);
+    updateBookAvailability(book.id, book.availability + 1,"","",true);
     };
 
 
     return (
         <div className="bookcard">
-            <h3>{title} ({yearPublication})</h3>
-            <h4>{author}</h4>
+            <h3 className="bookcard-title bookcard-text">{title} ({yearPublication})</h3>
+            <h4 className="bookcard-text">{author}</h4>
             <img className="bookcard-caratula" src={caratula} alt="Portada del libro"/>
-            <p>Volumenes disponibles : {availability}</p>
-            { (loaned==="yes") ?(
-                <button onClick={handleDevolution}>devolver</button>):null
-            }
+            <p className="bookcard-disponibility bookcard-text">Volumenes disponibles : {availability}</p>
             <Link to={`/books/${id}`}>
-                <button>Ver detalles</button>
+                <button className="bookcard-button">Ver detalles</button>
             </Link>
+            { (loaned==="yes") ?(
+                <button onClick={handleDevolution}>Devolver libro</button>):null
+            }
         </div>
     );
 }

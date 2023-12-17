@@ -3,8 +3,19 @@
     border: 1px solid #444;
     padding-left: 20px;
     margin-left: 20px;
-    display: flex;
     align-items: center;
+    display: flex;
+}
+
+.div-selector {
+    display: flex;
+    flex: 4;
+    margin-right: 0px;
+}
+
+.div-searchBox {
+    display: flex;
+    flex: 4;
 }
 
 .filter-text{
@@ -13,4 +24,11 @@
 
 .filter-select {
     height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.filter-searchBox{
+    height: 29px;
+    margin-top: 10px;
 }

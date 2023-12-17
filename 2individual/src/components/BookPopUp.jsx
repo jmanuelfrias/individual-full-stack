@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React, {useContext, useState} from 'react';
 import '../styles/Popup.css';
-
-const handleLoanAction = (value) => {
-    console.log('Handling loan action for date:', value);    // Add your logic for using loans with the selected date here
-};
+import {LibraryContext} from "../context/LibraryContext";
 
 const BookPopUp = ({ onClose, onBorrow }) => {
     const [datepickerValue, setDatepickerValue] = useState('');
+    const { error, setError, validateDate} = useContext(LibraryContext)
 
     const handleLoanRequest = () => {
-        // Assuming onBorrow is a function that updates book availability
-        onBorrow(datepickerValue);
-        onClose();
+        if(validateDate(datepickerValue)){
+            setError('');
+            onBorrow(datepickerValue);
+            onClose();
+        }
     };
+
+    const handleClose =() => {
+        setError('');
+        onClose();
+    }
 
     return (
         <div className="popup">
@@ -20,15 +25,16 @@ const BookPopUp = ({ onClose, onBorrow }) => {
             <div className="popup-botones">
                 <div className="botones-datepicker">
                     <input
-                        id="datepicker"
+                        id='datepicker'
                         type="text"
                         placeholder="Select a date"
                         value={datepickerValue}
                         onChange={(e) => setDatepickerValue(e.target.value)}
                     />
+                    <p className="error">{error}</p>
                 </div>
                 <div className="botones-control">
-                    <button className="botones-control-boton" onClick={onClose}>
+                    <button className="botones-control-boton" onClick={handleClose}>
                         Close
                     </button>
                     <button className="botones-control-boton" onClick={handleLoanRequest}>

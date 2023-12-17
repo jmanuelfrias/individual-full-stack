@@ -6,23 +6,19 @@ import {useRestaurants} from "./hooks/useRestaurants";
 import {useBooks} from "./hooks/useBooks";
 import {LibraryContext} from "./context/LibraryContext";
 import BookRouter from "./routes/BookRouter";
-import {useLoans} from "./hooks/useLoans";
+import {useSelectedFilter} from "./hooks/useSelectedFilter";
+import {useSearchBox} from "./hooks/useSearchBox";
+import {useDateValidator} from "./hooks/useDateValidator";
 
 function App() {
 
     const {books, setBooks, updateBookAvailability} = useBooks();
-    const loans = useLoans();
-
-
-    //Funciones para actualizar el valor del filtro guardado
-    const [selectedFilter, setSelectedFilter] = useState('');
-    let updateSelectedFilter = useCallback((newValue) => {
-        setSelectedFilter(newValue);
-    }, []);
-
+    const {selectedFilter, updateSelectedFilter} = useSelectedFilter();
+    const {selectedSearch, updateSearchBox} = useSearchBox();
+    const { error, setError, validateDate } = useDateValidator();
 
     return (
-        <LibraryContext.Provider value={{loans,books ,updateBookAvailability, selectedFilter , updateSelectedFilter}}>
+        <LibraryContext.Provider value={{books ,updateBookAvailability, selectedFilter, updateSelectedFilter, selectedSearch, updateSearchBox, error, validateDate, setError }}>
             <BookRouter></BookRouter>
             <Footer />
         </LibraryContext.Provider>

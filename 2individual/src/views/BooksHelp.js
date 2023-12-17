@@ -11,7 +11,9 @@ export const BooksHelp=() =>{
             <ol>
                 <li>Selecciona la opción "Libros" en la barra de navegación de la izquierda</li>
                 <li>En el libro que parezca más interesante, haz click en detalles</li>
-                <li>Una vez se hayan desplegado sus detalles, haz click en tomar prestado</li>
+                <li>Una vez se hayan desplegado sus detalles, haz click en "Coger Prestado el libro"</li>
+                <li> Ponga la fecha hasta que la que desea tener el libro</li>
+                <li> Haga click en "Pedir Préstamo"</li>
                 <li> Tras esto, el libro aparecerá en la sección de "Préstamos"</li>
             </ol>
         </div>

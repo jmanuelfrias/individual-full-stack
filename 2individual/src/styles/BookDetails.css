@@ -5,11 +5,16 @@
     color: #f0e68c;
 }
 
-.details-information {
+.information-sinopsis{
+    margin-left: 0px;
 }
 
 .details-caratula{
     width: 200px;
     height: 250px;
+}
+
+.information-handling{
+    margin-left: 0px;
 }
 

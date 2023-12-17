@@ -1,13 +1,15 @@
 import {createContext, useContext, useState, useCallback, useEffect} from 'react';
 import {LibraryContext} from "../context/LibraryContext";
-export const useSelectedFilter = () => {
 
-
+//Funciones para actualizar la vista según el filtro usado
+export const useSelectedFilter=() => {
     const [selectedFilter, setSelectedFilter] = useState('');
 
-    const updateSelectedFilter = useCallback((newValue) => {
-            setSelectedFilter(newValue);
-        }, []);
+    let updateSelectedFilter = useCallback((newValue) => {
+        setSelectedFilter(newValue);
+    }, []);
 
-    return updateSelectedFilter;
-};
+    return {selectedFilter, updateSelectedFilter};
+
+
+}

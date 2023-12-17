@@ -5,20 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Home y prestamos implementados con distintas partes.&#10;Falta arreglar lo de la fecha a la hora de hacer un loan. Mirar si se puede cambiar la interfaz de prestamos para que se vea distinta">
-      <change afterPath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/components/LoanedBookDetails.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/components/LoanedBookList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Prestamos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/views/Prestamos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/hooks/useAvailability.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/hooks/useDateValidator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/hooks/useSearchBox.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/Book.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Book.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookPopUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookPopUp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useLoans.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/usePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/usePopup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useSelectedFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useSelectedFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Book.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Book.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/BookDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookDetails.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Filter.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/styles/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -183,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702780352963</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Home y prestamos implementados con distintas partes.&#10;Falta arreglar lo de la fecha a la hora de hacer un loan. Mirar si se puede cambiar la interfaz de prestamos para que se vea distinta">
+      <option name="closed" value="true" />
+      <created>1702824090807</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702824090807</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -8,6 +8,7 @@ import Filter from "./Filter";
 export const BookList =({ filter }) => {
     const { books } = useContext(LibraryContext);
     const { selectedFilter } = useContext(LibraryContext);
+    const { selectedSearch } = useContext(LibraryContext)
 
     const [showLoading, setShowLoading] = useState(true);
 
@@ -23,14 +24,14 @@ export const BookList =({ filter }) => {
     };
 
     const filteredData = viewFilter().filter(item =>
-        item.genre.toLowerCase().includes(selectedFilter.toLowerCase())
+        item.genre.toLowerCase().includes(selectedFilter.toLowerCase()) && item.title.includes(selectedSearch)
     );
 
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setShowLoading(false);
-        }, 2000); // Set the timeout duration in milliseconds (e.g., 5000 milliseconds = 5 seconds)
+        }, 3000);
 
         return () => {
             // Clear the timeout if the component unmounts or if filteredData becomes available
@@ -44,7 +45,7 @@ export const BookList =({ filter }) => {
             <Filter />
             <div className="book-container ">
                 {showLoading ? (
-                    <LinearProgress color="secondary" />
+                    <LinearProgress color="inherit" />
                 ) : (
                     filteredData.length > 0 ? (
                         filteredData.map((book, index) => (
@@ -63,7 +64,7 @@ export const BookList =({ filter }) => {
                             />
                         ))
                     ) : (
-                        <h3>Lo siento, no hemos ecnontrado ningún libro con estas características</h3>
+                        <h3>Lo siento, no hemos encontrado ningún libro con estas características</h3>
                     )
                 )}
             </div>
