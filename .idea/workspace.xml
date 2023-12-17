@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Añadiendo el datepicker">
-      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Arreglando cosas para vercel parte 8">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702774984843</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Arreglando cosas para vercel parte 8">
+      <option name="closed" value="true" />
+      <created>1702775116380</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702775116380</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +181,7 @@
     <MESSAGE value="subiendo cosas antiguas para que itre el depoly del vercel" />
     <MESSAGE value="Prueba random" />
     <MESSAGE value="Añadiendo el datepicker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadiendo el datepicker" />
+    <MESSAGE value="Arreglando cosas para vercel parte 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglando cosas para vercel parte 8" />
   </component>
 </project>

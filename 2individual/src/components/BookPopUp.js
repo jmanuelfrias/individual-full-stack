@@ -1,6 +1,7 @@
 // Popup.js
 import React, {useState} from 'react';
 import { handlePopupClose } from '../hooks/usePopup';
+import "react-datepicker/dist/react-datepicker.css";
 
 import DatePicker from 'react-datepicker';
 
@@ -16,7 +17,6 @@ const BookPopUp = ({ onClose }) => {
                 dateFormat="dd/MM/yyyy" // Customize the date format
             />
             <button onClick={onClose}>Close</button>
-            <p>prueda</p>
         </div>
     );
 };
