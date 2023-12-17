@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Prueba random">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Añadiendo el datepicker">
+      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jmanuelfrias"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a842b7e4-d303-499f-87a9-92f3e6d45b2f" />
+        <option name="url" value="https://github.com/jmanuelfrias/individual-full-stack.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -124,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702774860854</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Añadiendo el datepicker">
+      <option name="closed" value="true" />
+      <created>1702774984843</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702774984843</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +171,7 @@
     <MESSAGE value="Commiting index.js.&#10;Probando el datepicker" />
     <MESSAGE value="subiendo cosas antiguas para que itre el depoly del vercel" />
     <MESSAGE value="Prueba random" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prueba random" />
+    <MESSAGE value="Añadiendo el datepicker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadiendo el datepicker" />
   </component>
 </project>

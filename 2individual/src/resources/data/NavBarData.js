@@ -5,9 +5,6 @@ import book from '../icons/book-fill.svg'
 import loan from '../icons/basket-fill.svg'
 import help from '../icons/question.svg'
 
-import { BsFillHouseDoorFill } from "react-icons/bs";
-import { BsBook } from "react-icons/bs";
-import { BsBasketFill } from "react-icons/bs";
 export const SidebarData = [
     {
         title: 'Home',
