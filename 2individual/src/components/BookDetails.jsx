@@ -13,8 +13,8 @@ export const BookDetails = () => {
     const book = books.find(r => r.id === bookId);
 
     const handleDevolution = () => {
-        updateBookAvailability(book.id, book.availability + 1,"","",true);
-    };
+        const updatedAvailability = parseInt(book.availability, 10) + 1;
+        updateBookAvailability(book.id, updatedAvailability,"","",true);    };
     //const navigate = useNavigate();
     const [isPopupVisible, setPopupVisible] = useState(false);
 

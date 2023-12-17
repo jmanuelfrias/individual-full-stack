@@ -9,8 +9,8 @@ export const Book= ({id,title, yearPublication, author, caratula, availability, 
     const book = books.find(r => r.id === id);
 
     const handleDevolution = () => {
-    updateBookAvailability(book.id, book.availability + 1,"","",true);
-    };
+        const updatedAvailability = parseInt(book.availability, 10) + 1;
+        updateBookAvailability(book.id, updatedAvailability,"","",true);    };
 
 
     return (

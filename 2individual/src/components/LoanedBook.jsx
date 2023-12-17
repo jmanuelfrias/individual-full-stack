@@ -10,7 +10,8 @@ export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDa
     const today =new Date();
 
     const handleDevolution = () => {
-        updateBookAvailability(book.id, book.availability + 1,"","",true);
+        const updatedAvailability = parseInt(book.availability, 10) + 1;
+        updateBookAvailability(book.id, updatedAvailability,"","",true);
     };
 
     const checkDate =() => {
