@@ -14,10 +14,15 @@ a {
     color: inherit;
 }
 
+.main-div{
+    min-height: 80vh;
+}
+
 .header-footer {
     background-color: #222;
     padding: 10px;
     text-align: center;
+
 }
 
 .header-footer-text {

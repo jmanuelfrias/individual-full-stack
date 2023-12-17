@@ -6,19 +6,13 @@ import {useRestaurants} from "./hooks/useRestaurants";
 import {useBooks} from "./hooks/useBooks";
 import {LibraryContext} from "./context/LibraryContext";
 import BookRouter from "./routes/BookRouter";
+import {useLoans} from "./hooks/useLoans";
 
 function App() {
 
-  /* const restaurants = useRestaurants();
-
-    return (
-        <RestaurantContext.Provider value={{restaurants}}>
-            <GlobalRouter></GlobalRouter>
-            <Footer />
-        </RestaurantContext.Provider>
-    );*/
-
     const books = useBooks();
+    const loans = useLoans();
+
 
     //Funciones para actualizar el valor del filtro guardado
     const [selectedFilter, setSelectedFilter] = useState('');

@@ -1,0 +1,16 @@
+.filter-div{
+    background-color: #333;
+    border: 1px solid #444;
+    padding-left: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-text{
+    margin-right: 20px;
+}
+
+.filter-select {
+    height: 35px;
+}

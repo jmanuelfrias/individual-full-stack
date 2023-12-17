@@ -5,7 +5,7 @@ import '../styles/styles.css';
 export const BookHomePage=() =>{
 
     return (
-      <div className="home-div container">
+      <div className="home-div container main-div">
           <h1>Bienvenido a la UNIR Library!!</h1>
           <p>Aquí podrás tomar prestado libros durante un período de tiempo</p>
           <p>Para tomar prestado un libro, sigue los siguientes pasos:</p>

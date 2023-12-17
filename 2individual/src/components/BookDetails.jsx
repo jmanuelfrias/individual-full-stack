@@ -1,20 +1,27 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import {useParams} from "react-router-dom";
 import {LibraryContext} from "../context/LibraryContext";
 //import '../styles/movie.css'
 import '../styles/BookDetails.css'
+//import {useNavigate} from "react-router";
+import {handleButtonClick, handlePopupClose} from "../hooks/usePopup";
+import BookPopUp from "./BookPopUp";
 
 export const BookDetails = () => {
     const { bookId } = useParams();
     const { books } = useContext(LibraryContext);
+    //const navigate = useNavigate();
+    const [isPopupVisible, setPopupVisible] = useState(false);
+
     const book = books.find(r => r.id === bookId);
+
 
     if (!book) {
         return <h2>Ese libro no está en la biblioteca</h2>;
     }
 
     return (
-        <div className="book-details">
+        <div className="book-details main-div">
             <div className="details-caratula container">
                 <img className="details-caratula" src={book.caratula} alt="Carátula del libro" />
             </div>
@@ -28,7 +35,8 @@ export const BookDetails = () => {
                 <p>Género: {book.genre}</p>
                 <p>Calificación: {book.puntuation} / 10</p>
                 <p>Volumenes disponibles : {book.availability}</p>
-                <button>Coger prestado el libro</button>
+                <button onClick={() => handleButtonClick(setPopupVisible)}>Coger prestado el libro</button>
+                {isPopupVisible && <BookPopUp onClose={() => handlePopupClose(setPopupVisible)} />}
             </div>
 
         </div>

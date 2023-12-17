@@ -4,30 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Cambiado a la carpeta 2 individual por problemas con el codigo original">
-      <change afterPath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/hooks/useSelectedFilter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/resources/data/CategoryData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/resources/icons/basket-fill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/resources/icons/book-fill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/resources/icons/house-door-fill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/resources/icons/question.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Filter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="NavBar operativa,zona de libros central con filtro operativo por genero&#10;Se añaden además las pantallas de Home y Ayuda&#10;Ya no aparece el dispatcher">
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/hooks/useLoans.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/hooks/usePopup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/SinopsisPopup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/SinopsisPopup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/BookList.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/navBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookLanding.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookLanding.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/individual/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/src/views/Overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/views/Overview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Book.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Book.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Filter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Overview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/NotFound.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702735717692</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="NavBar operativa,zona de libros central con filtro operativo por genero&#10;Se añaden además las pantallas de Home y Ayuda&#10;Ya no aparece el dispatcher">
+      <option name="closed" value="true" />
+      <created>1702767886484</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702767886484</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pantalla basica implementada y primer intento del details.&#10;Todavía falta que la avilability vaya por cada uno&#10;El dispatcher is null error sigue dando por culo" />
     <MESSAGE value="Cambiado a la carpeta 2 individual por problemas con el codigo original" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambiado a la carpeta 2 individual por problemas con el codigo original" />
+    <MESSAGE value="NavBar operativa,zona de libros central con filtro operativo por genero&#10;Se añaden además las pantallas de Home y Ayuda&#10;Ya no aparece el dispatcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="NavBar operativa,zona de libros central con filtro operativo por genero&#10;Se añaden además las pantallas de Home y Ayuda&#10;Ya no aparece el dispatcher" />
   </component>
 </project>

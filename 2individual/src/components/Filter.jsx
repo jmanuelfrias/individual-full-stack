@@ -2,7 +2,7 @@
 import React, {useContext, useState} from 'react';
 import {CategoryData} from "../resources/data/CategoryData";
 import {LibraryContext} from "../context/LibraryContext";
-
+import '../styles/Filter.css'
 
 const Filter = () => {
     // Para guardar el filtro seleccionado
