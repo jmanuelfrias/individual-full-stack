@@ -1,7 +1,15 @@
 import {useEffect, useState} from "react";
 
 export const useBooks = () => {
-    const [books, setBooks] = useState([]);
+    let [books, setBooks, updateBookAvailability] = useState([]);
+
+    updateBookAvailability = (bookId, newAvailability) => {
+        setBooks((prevBooks) =>
+            prevBooks.map((book) =>
+                book.id === bookId ? { ...book, availability: newAvailability } : book
+            )
+        );
+    };
 
     useEffect(() => {
         //fetch(process.env.REACT_APP_GW_URL).then((res) => res.json()).then((res) => setRestaurants(res));
@@ -29,6 +37,6 @@ export const useBooks = () => {
         }, 2500);
     }, []);
 
-    return books;
+    return {books, setBooks, updateBookAvailability};
 
 }

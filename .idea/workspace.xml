@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Arreglando cosas para vercel parte 8">
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Añadido el datepicker css para que no pete">
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702775116380</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Añadido el datepicker css para que no pete">
+      <option name="closed" value="true" />
+      <created>1702775463257</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702775463257</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +194,7 @@
     <MESSAGE value="Prueba random" />
     <MESSAGE value="Añadiendo el datepicker" />
     <MESSAGE value="Arreglando cosas para vercel parte 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arreglando cosas para vercel parte 8" />
+    <MESSAGE value="Añadido el datepicker css para que no pete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadido el datepicker css para que no pete" />
   </component>
 </project>

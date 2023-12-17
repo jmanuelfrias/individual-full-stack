@@ -10,7 +10,7 @@ import {useLoans} from "./hooks/useLoans";
 
 function App() {
 
-    const books = useBooks();
+    const {books, setBooks, updateBookAvailability} = useBooks();
     const loans = useLoans();
 
 
@@ -22,7 +22,7 @@ function App() {
 
 
     return (
-        <LibraryContext.Provider value={{loans,books , selectedFilter , updateSelectedFilter}}>
+        <LibraryContext.Provider value={{loans,books ,updateBookAvailability, selectedFilter , updateSelectedFilter}}>
             <BookRouter></BookRouter>
             <Footer />
         </LibraryContext.Provider>

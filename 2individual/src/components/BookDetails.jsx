@@ -5,11 +5,11 @@ import {LibraryContext} from "../context/LibraryContext";
 import '../styles/BookDetails.css'
 //import {useNavigate} from "react-router";
 import {handleButtonClick, handlePopupClose} from "../hooks/usePopup";
-import BookPopUp from "./BookPopUp";
+import BookPopUp from "./BookPopUp.jsx";
 
 export const BookDetails = () => {
     const { bookId } = useParams();
-    const { books } = useContext(LibraryContext);
+    const { books, updateBookAvailability } = useContext(LibraryContext);
     //const navigate = useNavigate();
     const [isPopupVisible, setPopupVisible] = useState(false);
 
@@ -19,6 +19,19 @@ export const BookDetails = () => {
     if (!book) {
         return <h2>Ese libro no está en la biblioteca</h2>;
     }
+
+    const handleBorrowButtonClick = () => {
+        handleButtonClick(setPopupVisible);
+    };
+
+    const handleBorrow = (selectedDate) => {
+        // Update the availability with the bookId and the selected date
+        // Assuming updateBookAvailability is a function that updates book availability
+        updateBookAvailability(book.id, book.availability - 1);
+        // Optionally, you can also log the updated availability
+        console.log(`Book ${book.title} availability updated to ${book.availability - 1}`);
+    };
+
 
     return (
         <div className="book-details main-div">
@@ -35,8 +48,8 @@ export const BookDetails = () => {
                 <p>Género: {book.genre}</p>
                 <p>Calificación: {book.puntuation} / 10</p>
                 <p>Volumenes disponibles : {book.availability}</p>
-                <button onClick={() => handleButtonClick(setPopupVisible)}>Coger prestado el libro</button>
-                {isPopupVisible && <BookPopUp onClose={() => handlePopupClose(setPopupVisible)} />}
+                <button onClick={handleBorrowButtonClick}>Coger prestado el libro</button>
+                {isPopupVisible && <BookPopUp onClose={() => handlePopupClose(setPopupVisible)} onBorrow={handleBorrow}/>}
             </div>
 
         </div>

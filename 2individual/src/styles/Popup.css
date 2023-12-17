@@ -1,0 +1,18 @@
+
+
+.botones-control-boton {
+    margin-right: 20px;
+}
+
+.botones-datepicker {
+    margin: 0px;
+}
+
+
+.botones-datepicker > * {
+    margin: 0px;
+}
+.custom-datepicker-popper{
+    width: 200px; /* Set the desired width */
+    max-height: 200px; /* Set the maximum height if needed */
+}
