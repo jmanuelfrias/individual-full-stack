@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Intentnado meter el popup para actualizar los pedidos">
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Prueba random">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,17 +100,55 @@
       <option name="project" value="LOCAL" />
       <updated>1702773578106</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commiting index.js.&#10;Probando el datepicker">
+      <option name="closed" value="true" />
+      <created>1702774188288</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702774188288</updated>
+    </task>
+    <task id="LOCAL-00005" summary="subiendo cosas antiguas para que itre el depoly del vercel">
+      <option name="closed" value="true" />
+      <created>1702774546514</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702774546514</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Prueba random">
+      <option name="closed" value="true" />
+      <created>1702774860854</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702774860854</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pantalla basica implementada y primer intento del details.&#10;Todavía falta que la avilability vaya por cada uno&#10;El dispatcher is null error sigue dando por culo" />
     <MESSAGE value="Cambiado a la carpeta 2 individual por problemas con el codigo original" />
     <MESSAGE value="NavBar operativa,zona de libros central con filtro operativo por genero&#10;Se añaden además las pantallas de Home y Ayuda&#10;Ya no aparece el dispatcher" />
     <MESSAGE value="Intentnado meter el popup para actualizar los pedidos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intentnado meter el popup para actualizar los pedidos" />
+    <MESSAGE value="Commiting index.js.&#10;Probando el datepicker" />
+    <MESSAGE value="subiendo cosas antiguas para que itre el depoly del vercel" />
+    <MESSAGE value="Prueba random" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prueba random" />
   </component>
 </project>
