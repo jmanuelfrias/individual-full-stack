@@ -16,6 +16,11 @@ export const BooksHelp=() =>{
                 <li> Haga click en "Pedir Préstamo"</li>
                 <li> Tras esto, el libro aparecerá en la sección de "Préstamos"</li>
             </ol>
+            <p>Para devolver los libros solo tienes que:</p>
+            <ol>
+                <li>Ir a cualquier página con libros desplegados</li>
+                <li>Hacer click en el botón de "Devolver Libro"</li>
+            </ol>
         </div>
 
 
