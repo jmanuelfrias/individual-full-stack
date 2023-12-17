@@ -16,6 +16,7 @@ const BookPopUp = ({ onClose }) => {
                 dateFormat="dd/MM/yyyy" // Customize the date format
             />
             <button onClick={onClose}>Close</button>
+            <p>prueda</p>
         </div>
     );
 };
