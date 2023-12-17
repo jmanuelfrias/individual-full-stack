@@ -65,7 +65,7 @@ export const BookDetails = () => {
                     {isPopupVisible && <BookPopUp onClose={() => handlePopupClose(setPopupVisible)} onBorrow={handleBorrow} />}
                    </div>
                        )}
-                {book.loaned === "yes" && (
+                    {book.loaned === "yes" && (
                     <>
                         <p className="loaned-message">Ya tienes este libro en tu biblioteca</p>
                         <button onClick={handleDevolution}>Devolver libro</button>

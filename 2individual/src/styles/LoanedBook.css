@@ -34,3 +34,7 @@
 .loaned-bookcard-buttons > * {
     margin-right: 10px;
 }
+
+.bookcard-error{
+    color: red;
+}
