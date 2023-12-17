@@ -10,6 +10,7 @@ import {BookDetails} from "../components/BookDetails";
 import BookLanding from "../views/BookLanding";
 import {BooksHelp} from "../views/BooksHelp";
 import {BookHomePage} from "../views/BookHomePage";
+import {Prestamos} from "../views/Prestamos";
 
 function BookRouter() {
     return (
@@ -19,6 +20,7 @@ function BookRouter() {
                 <Route path="/home" element={<Layout><BookHomePage /></Layout>} />
                 <Route path="/books" element={<Layout><BookOverview /></Layout>} />
                 <Route path="/books/:bookId" element={<Layout><BookDetails /></Layout>} />
+                <Route path="/loans" element={<Layout><Prestamos /></Layout>} />
                 <Route path="/help" element={<Layout><BooksHelp /></Layout>} />
                 <Route path="*" element={<Layout><NotFound /></Layout>} />
             </Routes>

@@ -7,7 +7,7 @@ import '../styles/BookDetails.css'
 import {handleButtonClick, handlePopupClose} from "../hooks/usePopup";
 import BookPopUp from "./BookPopUp.jsx";
 
-export const BookDetails = () => {
+export const LoanedBookDetails = () => {
     const { bookId } = useParams();
     const { books, updateBookAvailability } = useContext(LibraryContext);
     //const navigate = useNavigate();
@@ -19,20 +19,6 @@ export const BookDetails = () => {
     if (!book) {
         return <h2>Ese libro no está en la biblioteca</h2>;
     }
-
-    const handleBorrowButtonClick = () => {
-        handleButtonClick(setPopupVisible);
-        //updateBookAvailability(book.id, book.availability - 1);
-    };
-
-    const handleBorrow = (selectedDate) => {
-        // Update the availability with the bookId and the selected date
-        // Assuming updateBookAvailability is a function that updates book availability
-        updateBookAvailability(book.id, book.availability - 1,selectedDate,false);
-        // Optionally, you can also log the updated availability
-        console.log(`Book ${book.title} availability updated to ${book.availability - 1}`);
-    };
-
 
     return (
         <div className="book-details main-div">
@@ -52,14 +38,14 @@ export const BookDetails = () => {
 
                 {/*Ahora tengo control de mirar si el libro está prestado al usuario o no*/}
                 {book.loaned === "no" && (
-                   <div>
-                    <button onClick={handleBorrowButtonClick}>Coger prestado el libro</button>
-                    {isPopupVisible && <BookPopUp onClose={() => handlePopupClose(setPopupVisible)} onBorrow={handleBorrow} />}
-                   </div>
-                       )}
+                    <div>
+                        <button onClick={handleBorrowButtonClick}>Coger prestado el libro</button>
+                        {isPopupVisible && <BookPopUp onClose={() => handlePopupClose(setPopupVisible)} onBorrow={handleBorrow} />}
+                    </div>
+                )}
                 {book.loaned === "yes" && (
                     <p>This book is currently on loan.</p>
-                    )}
+                )}
 
             </div>
 
