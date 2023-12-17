@@ -4,6 +4,7 @@ import {LibraryContext} from "../context/LibraryContext";
 import {LinearProgress} from "@mui/material";
 import '../styles/BookList.css'
 import Filter from "./Filter";
+import {LoanedBook} from "./LoanedBook";
 
 export const BookList =({ filter }) => {
     const { books } = useContext(LibraryContext);
@@ -43,25 +44,44 @@ export const BookList =({ filter }) => {
     return (
         <>
             <Filter />
-            <div className="book-container ">
+            <div className={`book-container ${filter !== "loaned" ? "main-layout" : ""}`}>
                 {showLoading ? (
                     <LinearProgress color="inherit" />
                 ) : (
                     filteredData.length > 0 ? (
                         filteredData.map((book, index) => (
-                            <Book
-                                key={index}
-                                id={book.id}
-                                title={book.title}
-                                yearPublication={book.yearPublication}
-                                author={book.author}
-                                caratula={book.caratula}
-                                availability={book.availability}
-                                sinopsis={book.sinopsis}
-                                genre={book.genre}
-                                puntuation={book.puntuation}
-                                loaned={book.loaned}
-                            />
+
+                            filter === "loaned" ? (
+                                    <LoanedBook
+                                        key={index}
+                                        id={book.id}
+                                        title={book.title}
+                                        yearPublication={book.yearPublication}
+                                        author={book.author}
+                                        caratula={book.caratula}
+                                        availability={book.availability}
+                                        sinopsis={book.sinopsis}
+                                        genre={book.genre}
+                                        puntuation={book.puntuation}
+                                        loaned={book.loaned}
+                                        initialDate={book.initialDate}
+                                        loanedDate={book.loanedDate}
+                                    />
+                                ) : (
+                                <Book
+                                    key={index}
+                                    id={book.id}
+                                    title={book.title}
+                                    yearPublication={book.yearPublication}
+                                    author={book.author}
+                                    caratula={book.caratula}
+                                    availability={book.availability}
+                                    sinopsis={book.sinopsis}
+                                    genre={book.genre}
+                                    puntuation={book.puntuation}
+                                    loaned={book.loaned}
+                                />
+                                )
                         ))
                     ) : (
                         <h3>Lo siento, no hemos encontrado ningún libro con estas características</h3>

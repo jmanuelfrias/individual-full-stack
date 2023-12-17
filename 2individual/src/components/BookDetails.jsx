@@ -10,10 +10,14 @@ import BookPopUp from "./BookPopUp.jsx";
 export const BookDetails = () => {
     const { bookId } = useParams();
     const { books, updateBookAvailability } = useContext(LibraryContext);
+    const book = books.find(r => r.id === bookId);
+
+    const handleDevolution = () => {
+        updateBookAvailability(book.id, book.availability + 1,"","",true);
+    };
     //const navigate = useNavigate();
     const [isPopupVisible, setPopupVisible] = useState(false);
 
-    const book = books.find(r => r.id === bookId);
 
 
     if (!book) {
@@ -62,7 +66,10 @@ export const BookDetails = () => {
                    </div>
                        )}
                 {book.loaned === "yes" && (
-                    <p>This book is currently on loan.</p>
+                    <>
+                        <p className="loaned-message">Ya tienes este libro en tu biblioteca</p>
+                        <button onClick={handleDevolution}>Devolver libro</button>
+                    </>
                     )}
 
             </div>

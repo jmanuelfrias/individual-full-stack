@@ -11,11 +11,15 @@
     display: flex;
     flex: 4;
     margin-right: 0px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .div-searchBox {
     display: flex;
     flex: 4;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .filter-text{
