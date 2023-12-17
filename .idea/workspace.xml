@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="NavBar operativa,zona de libros central con filtro operativo por genero&#10;Se añaden además las pantallas de Home y Ayuda&#10;Ya no aparece el dispatcher">
-      <change afterPath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/hooks/useLoans.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/hooks/usePopup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Home.css" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Intentnado meter el popup para actualizar los pedidos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Book.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Book.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Filter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Overview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/NotFound.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookPopUp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702767886484</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Intentnado meter el popup para actualizar los pedidos">
+      <option name="closed" value="true" />
+      <created>1702773578106</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702773578106</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +112,7 @@
     <MESSAGE value="Pantalla basica implementada y primer intento del details.&#10;Todavía falta que la avilability vaya por cada uno&#10;El dispatcher is null error sigue dando por culo" />
     <MESSAGE value="Cambiado a la carpeta 2 individual por problemas con el codigo original" />
     <MESSAGE value="NavBar operativa,zona de libros central con filtro operativo por genero&#10;Se añaden además las pantallas de Home y Ayuda&#10;Ya no aparece el dispatcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="NavBar operativa,zona de libros central con filtro operativo por genero&#10;Se añaden además las pantallas de Home y Ayuda&#10;Ya no aparece el dispatcher" />
+    <MESSAGE value="Intentnado meter el popup para actualizar los pedidos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intentnado meter el popup para actualizar los pedidos" />
   </component>
 </project>

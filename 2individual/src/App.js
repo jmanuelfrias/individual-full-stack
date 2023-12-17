@@ -22,7 +22,7 @@ function App() {
 
 
     return (
-        <LibraryContext.Provider value={{books , selectedFilter , updateSelectedFilter}}>
+        <LibraryContext.Provider value={{loans,books , selectedFilter , updateSelectedFilter}}>
             <BookRouter></BookRouter>
             <Footer />
         </LibraryContext.Provider>
