@@ -4,12 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Separado el book data en una clase de datos especifica (como los datos del navbar o los posibles filtros)&#10;Limpieza de los imports y código que no va">
-      <change afterPath="$PROJECT_DIR$/2individual/src/components/DevolverButton.jsx" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Nuevo componente para tener el boton de devolución agrupado">
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/Landing.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/Book.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Book.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookPopUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookPopUp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Book.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Book.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/BookDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookDetails.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/BookList.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Filter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/LoanedBook.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/LoanedBook.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Overview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookPopUp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/NotFound.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/Prestamos.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/Prestamos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -238,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702924984814</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Nuevo componente para tener el boton de devolución agrupado">
+      <option name="closed" value="true" />
+      <created>1702926800947</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702926800947</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +304,7 @@
     <MESSAGE value="Resuleto bug en la que a veces al hacer la devolución concatenaba el +1 al nçúmero en vez de añadírselo&#10;Mirar como sacar un hook para unir todos los handle devolution" />
     <MESSAGE value="Resuelto el bug the Frankestein (había introducido el availability cono string y no número&#10;Refactorización de los Loans y Devolutions" />
     <MESSAGE value="Separado el book data en una clase de datos especifica (como los datos del navbar o los posibles filtros)&#10;Limpieza de los imports y código que no va" />
-    <option name="LAST_COMMIT_MESSAGE" value="Separado el book data en una clase de datos especifica (como los datos del navbar o los posibles filtros)&#10;Limpieza de los imports y código que no va" />
+    <MESSAGE value="Nuevo componente para tener el boton de devolución agrupado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nuevo componente para tener el boton de devolución agrupado" />
   </component>
 </project>

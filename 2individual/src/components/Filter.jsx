@@ -10,11 +10,11 @@ const Filter = () => {
     const {  updateSearchBox } = useContext(LibraryContext)
 
     return (
-        <div className="container filter-div">
-            <div className="div-selector">
-                <p className="filter-text">Filtro por género</p>
+        <div className="container filter">
+            <div className="filter__selector">
+                <p className="filter__text">Filtro por género</p>
                 {/*Caja del filtro donde tenemos un on Change que llama a la función de actualizar lo guardado*/}
-                <select className="filter-select"
+                <select className="selector__select"
                         value={selectedFilter}
                         onChange={(e) => updateSelectedFilter(e.target.value)}
                 >
@@ -27,10 +27,10 @@ const Filter = () => {
                     ))}
                 </select>
             </div>
-            <div className="div-searchBox">
-                <p className="filter-text">Buscar nombre</p>
+            <div className="filter__searchBox">
+                <p className="filter__text">Buscar nombre</p>
 
-                <input className="filter-searchBox"
+                <input className="searchBox__input"
                        placeholder="Buscador por nombre"
                        type="text" onChange={(e) => updateSearchBox(e.target.value)}  />
             </div>

@@ -1,4 +1,4 @@
-.overview-div {
+.overview {
     background-color: #1a1a1a;
     margin: 0px;
     padding: 0px;
@@ -6,6 +6,6 @@
 
 }
 
-.div-header {
+.overview__header {
     padding-top: 10px;
 }

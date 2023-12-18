@@ -1,24 +1,24 @@
-.book-details {
+.book__details {
     display: flex;
     margin:0px;
     background-color: #333;
     color: #f0e68c;
 }
 
-.information-sinopsis{
+.information__sinopsis{
     margin-left: 0px;
 }
 
-.details-caratula{
+.details__caratula{
     width: 200px;
     height: 250px;
 }
 
-.information-handling{
+.information__handling{
     margin-left: 0px;
 }
 
-.loaned-message{
+.information__loaned{
     color:limegreen;
 }
 

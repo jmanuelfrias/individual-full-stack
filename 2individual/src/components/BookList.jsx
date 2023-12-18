@@ -44,7 +44,7 @@ export const BookList =({ filter }) => {
     return (
         <>
             <Filter />
-            <div className={`book-container ${filter !== "loaned" ? "main-layout" : ""}`}>
+            <div className={`book__container ${filter !== "loaned" ? "main__layout" : ""}`}>
                 {showLoading ? (
                     <LinearProgress color="inherit" />
                 ) : (

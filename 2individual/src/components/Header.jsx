@@ -6,7 +6,7 @@ export const Header = () =>{
     return (
         <header className="header">
             <Link to='/'>
-                <h1 className="header-text header-footer-text">UNIR Library</h1>
+                <h1 className="header__text header-footer__text">UNIR Library</h1>
             </Link>
         </header>
     );

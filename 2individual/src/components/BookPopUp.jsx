@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import '../styles/Popup.css';
+import '../styles/BookPopUp.css';
 import {LibraryContext} from "../context/LibraryContext";
 
 const BookPopUp = ({ onClose, onBorrow }) => {
@@ -22,8 +22,8 @@ const BookPopUp = ({ onClose, onBorrow }) => {
     return (
         <div className="popup">
             <p>Seleccione hasta qué fecha quiere tener prestado el libro</p>
-            <div className="popup-botones">
-                <div className="botones-datepicker">
+            <div className="popup__botones">
+                <div className="botones__datepicker">
                     <input
                         id='datepicker'
                         type="text"
@@ -31,13 +31,13 @@ const BookPopUp = ({ onClose, onBorrow }) => {
                         value={datepickerValue}
                         onChange={(e) => setDatepickerValue(e.target.value)}
                     />
-                    <p className="error">{error}</p>
+                    <p className="datepicker__error">{error}</p>
                 </div>
-                <div className="botones-control">
-                    <button className="botones-control-boton" onClick={handleClose}>
+                <div className="botones__control">
+                    <button className="control__boton" onClick={handleClose}>
                         Close
                     </button>
-                    <button className="botones-control-boton" onClick={handleLoanRequest}>
+                    <button className="control__boton" onClick={handleLoanRequest}>
                         Pedir Prestamo
                     </button>
                 </div>

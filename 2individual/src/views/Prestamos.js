@@ -11,8 +11,8 @@ export const Prestamos = () => {
     const { books } = useContext(LibraryContext);
 
     return (
-        <div className="loaned-div main-div">
-            <h2 className="center-text div-header">Tienes prestados los siguientes libros </h2>
+        <div className="loaned main__div">
+            <h2 className="center-text loaned__header">Tienes prestados los siguientes libros </h2>
             <BookList filter="loaned"/>
         </div>
     );

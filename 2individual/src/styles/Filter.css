@@ -1,4 +1,4 @@
-.filter-div{
+.filter{
     background-color: #333;
     border: 1px solid #444;
     padding-left: 20px;
@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.div-selector {
+.filter__selector {
     display: flex;
     flex: 4;
     margin-right: 0px;
@@ -15,24 +15,24 @@
     margin-bottom: 1%;
 }
 
-.div-searchBox {
+.filter__searchBox {
     display: flex;
     flex: 4;
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
-.filter-text{
+.filter__text{
     margin-right: 20px;
 }
 
-.filter-select {
+.selector__select {
     height: 35px;
     margin-right: 10px;
     margin-top: 10px;
 }
 
-.filter-searchBox{
+.searchBox__input{
     height: 29px;
     margin-top: 10px;
 }

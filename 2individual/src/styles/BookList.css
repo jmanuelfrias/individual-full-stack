@@ -1,14 +1,14 @@
-.book-container {
+.book__container {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.main-layout {
+.main__layout {
     display: flex;
 
 }
 
-.main-layout > * {
+.main__layout > * {
     flex: 1 1 auto;
-    max-width: 20%; /* Esto limitará el ancho de los elementos al 40% del contenedor */
-    margin: 10px; /* Esto agregará un poco de espacio alrededor de los elementos */
+    max-width: 20%;
+    margin: 10px;
 }

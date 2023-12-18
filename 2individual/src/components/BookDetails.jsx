@@ -29,15 +29,15 @@ export const BookDetails = () => {
 
 
     return (
-        <div className="book-details main-div">
-            <div className="details-caratula container">
-                <img className="details-caratula" src={book.caratula} alt="Carátula del libro" />
+        <div className="book__details main__div">
+            <div className="details__caratula container">
+                <img className="details__caratula" src={book.caratula} alt="Carátula del libro" />
             </div>
-            <div className="details-information">
+            <div className="details__information">
                 <h1>{book.title} </h1>
                 <h2>{book.author}</h2>
-                <p className="information-publication">Publicado por primera vez en {book.yearPublication}</p>
-                <div className="information-sinopsis">
+                <p className="information__publication">Publicado por primera vez en {book.yearPublication}</p>
+                <div className="information__sinopsis">
                     <p>Sinopsis: {book.sinopsis}</p>
                 </div>
                 <p>Género: {book.genre}</p>
@@ -45,14 +45,14 @@ export const BookDetails = () => {
                 <p>Volumenes disponibles : {book.availability}</p>
 
                 {book.loaned === "no" && (
-                   <div className="information-handling">
+                   <div className="information__handling">
                     <button onClick={handleBorrowButtonClick}>Coger prestado el libro</button>
                     {isPopupVisible && <BookPopUp onClose={() => handlePopupClose(setPopupVisible)} onBorrow={handleBorrow} />}
                    </div>
                        )}
                     {book.loaned === "yes" && (
                     <>
-                        <p className="loaned-message">Ya tienes este libro en tu biblioteca</p>
+                        <p className="information__loaned">Ya tienes este libro en tu biblioteca</p>
                         <DevolverButton book={book} />
                     </>
                     )}

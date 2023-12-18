@@ -15,9 +15,9 @@ export const NavBar = () => {
                 {SidebarData.map((item, index) => {
                     return (
                          <Link to={item.path}>
-                                    <div className="menu-items-box">
-                                    <img className="items-box-image" src={item.icon} alt="icono"></img>
-                                    <p className="items-box-text">{item.title}</p>
+                                    <div className="navBar">
+                                    <img className="navBar__icon" src={item.icon} alt="icono"></img>
+                                    <p className="navBar__text">{item.title}</p>
                                     </div>
                          </Link>
                     );

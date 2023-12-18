@@ -11,8 +11,8 @@ export const BookOverview = () => {
     const { books } = useContext(LibraryContext);
 
     return (
-        <div className="overview-div main-div">
-            <h2 className="center-text div-header">Available Books</h2>
+        <div className="overview main__div">
+            <h2 className="center-text overview__header">Available Books</h2>
             <BookList />
         </div>
     );

@@ -1,0 +1,14 @@
+
+
+
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.landing h1 {
+    position: relative;
+    text-align: center;
+}

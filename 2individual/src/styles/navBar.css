@@ -1,13 +1,13 @@
-.nav-menu-items{
+.navBar__text{
     padding :0px;
 
 }
 
-.menu-items-box{
+.navBar{
     display: flex;
 }
 
-.items-box-image {
+.navBar__icon {
     width: 30px;
     height: 30px;
     padding:5px;

@@ -24,16 +24,16 @@ export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDa
 
 
     return (
-        <div className="loaned-bookcard">
-            <div  className="loaned-bookcard-caratula">
-                <img className="bookcard-caratula" src={caratula} alt="Portada del libro"/>
+        <div className="loaned__bookcard">
+            <div  className="loaned__bookcard__caratula">
+                <img className="bookcard__caratula" src={caratula} alt="Portada del libro"/>
             </div>
             <div>
                 <h3>{title} ({yearPublication})</h3>
                 <h4>{author}</h4>
                 <p>Recogido el día : {initialDate}</p>
-                <p className={ checkDate() ? "bookcard-error" : ""}>Disponible hasta el día : {loanedDate}</p>
-                <div className="loaned-bookcard-buttons">
+                <p className={ checkDate() ? "bookcard__error" : ""}>Disponible hasta el día : {loanedDate}</p>
+                <div className="loaned__bookcard__buttons">
                     <Link to={`/books/${id}`}>
                         <button>Ver detalles</button>
                     </Link>

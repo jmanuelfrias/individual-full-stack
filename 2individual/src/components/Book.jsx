@@ -13,12 +13,12 @@ export const Book= ({id,title, yearPublication, author, caratula, availability, 
 
     return (
         <div className="bookcard">
-            <h3 className="bookcard-title bookcard-text">{title} ({yearPublication})</h3>
-            <h4 className="bookcard-text">{author}</h4>
-            <img className="bookcard-caratula" src={caratula} alt="Portada del libro"/>
-            <p className="bookcard-disponibility bookcard-text">Volumenes disponibles : {availability}</p>
+            <h3 className="bookcard__title bookcard__text">{title} ({yearPublication})</h3>
+            <h4 className="bookcard__text">{author}</h4>
+            <img className="bookcard__caratula" src={caratula} alt="Portada del libro"/>
+            <p className="bookcard__disponibility bookcard__text">Volumenes disponibles : {availability}</p>
             <Link to={`/books/${id}`}>
-                <button className="bookcard-button">Ver detalles</button>
+                <button className="bookcard__button">Ver detalles</button>
             </Link>
             {/*Si el libro esta prestado, le añadimos un botón de devolución*/}
             { (loaned==="yes") ?(

@@ -1,0 +1,23 @@
+
+
+
+
+.botones__datepicker {
+    margin: 0px;
+    display: flex;
+}
+
+
+.botones__datepicker > * {
+    margin: 0px;
+}
+
+
+.datepicker__error{
+    color:red;
+    margin-left: 10px;
+}
+
+.control__boton {
+    margin-right: 20px;
+}
