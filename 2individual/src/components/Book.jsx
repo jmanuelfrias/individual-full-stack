@@ -2,7 +2,9 @@ import React, {useContext} from "react";
 import '../styles/Book.css'
 import {Link} from "react-router-dom";
 import {LibraryContext} from "../context/LibraryContext";
+import {DevolverButton} from "./DevolverButton";
 
+//Instancias de los libros en las vistas de Home y Overview central
 export const Book= ({id,title, yearPublication, author, caratula, availability, loaned}) =>{
 
     const { books, handleDevolution } = useContext(LibraryContext);
@@ -18,8 +20,9 @@ export const Book= ({id,title, yearPublication, author, caratula, availability, 
             <Link to={`/books/${id}`}>
                 <button className="bookcard-button">Ver detalles</button>
             </Link>
+            {/*Si el libro esta prestado, le añadimos un botón de devolución*/}
             { (loaned==="yes") ?(
-                <button onClick={()=>handleDevolution(book)}>Devolver libro</button>):null
+               <DevolverButton book={book} />):null
             }
         </div>
     );

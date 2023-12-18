@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import '../styles/LoanedBook.css'
 import {Link} from "react-router-dom";
 import {LibraryContext} from "../context/LibraryContext";
+import {DevolverButton} from "./DevolverButton";
 
 export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDate, loanedDate, availability}) =>{
 
@@ -36,7 +37,7 @@ export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDa
                     <Link to={`/books/${id}`}>
                         <button>Ver detalles</button>
                     </Link>
-                    <button onClick={() =>handleDevolution(book)}>Devolver libro</button>
+                    <DevolverButton book={book} />
                 </div>
 
             </div>

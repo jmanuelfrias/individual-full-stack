@@ -4,32 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Resuelto el bug the Frankestein (había introducido el availability cono string y no número&#10;Refactorización de los Loans y Devolutions">
-      <change afterPath="$PROJECT_DIR$/2individual/src/resources/data/BookData.js" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Separado el book data en una clase de datos especifica (como los datos del navbar o los posibles filtros)&#10;Limpieza de los imports y código que no va">
+      <change afterPath="$PROJECT_DIR$/2individual/src/components/DevolverButton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Book.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Book.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/ErrorNotification.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/LoanedBookDetails.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/LoanedBookList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Restaurant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/SinopsisPopup.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/context/RestaurantContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useAvailability.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useAvailability.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/usePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/usePopup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useRestaurants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useSelectedFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useSelectedFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/CategoryData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/CategoryData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/routes/GlobalRouter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/Landing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/Overview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/Prestamos.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/Prestamos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/RestaurantDetails.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702900191911</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Separado el book data en una clase de datos especifica (como los datos del navbar o los posibles filtros)&#10;Limpieza de los imports y código que no va">
+      <option name="closed" value="true" />
+      <created>1702924984814</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702924984814</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +274,7 @@
     <MESSAGE value="Añadido texto al home y al help" />
     <MESSAGE value="Resuleto bug en la que a veces al hacer la devolución concatenaba el +1 al nçúmero en vez de añadírselo&#10;Mirar como sacar un hook para unir todos los handle devolution" />
     <MESSAGE value="Resuelto el bug the Frankestein (había introducido el availability cono string y no número&#10;Refactorización de los Loans y Devolutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resuelto el bug the Frankestein (había introducido el availability cono string y no número&#10;Refactorización de los Loans y Devolutions" />
+    <MESSAGE value="Separado el book data en una clase de datos especifica (como los datos del navbar o los posibles filtros)&#10;Limpieza de los imports y código que no va" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separado el book data en una clase de datos especifica (como los datos del navbar o los posibles filtros)&#10;Limpieza de los imports y código que no va" />
   </component>
 </project>

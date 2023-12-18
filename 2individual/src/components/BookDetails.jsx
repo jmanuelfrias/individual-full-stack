@@ -4,6 +4,7 @@ import {LibraryContext} from "../context/LibraryContext";
 import '../styles/BookDetails.css'
 import {handleButtonClick, handlePopupClose} from "../hooks/usePopup";
 import BookPopUp from "./BookPopUp.jsx";
+import {DevolverButton} from "./DevolverButton";
 
 export const BookDetails = () => {
     const { bookId } = useParams();
@@ -52,7 +53,7 @@ export const BookDetails = () => {
                     {book.loaned === "yes" && (
                     <>
                         <p className="loaned-message">Ya tienes este libro en tu biblioteca</p>
-                        <button onClick={()=>handleDevolution(book)}>Devolver libro</button>
+                        <DevolverButton book={book} />
                     </>
                     )}
 
