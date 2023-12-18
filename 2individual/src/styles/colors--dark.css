@@ -1,0 +1,30 @@
+.boxes--dark{
+    background-color: #333;
+   border: 1px solid #444;
+}
+
+.details--dark{
+    background-color: #333;
+}
+
+.mainText--dark{
+    color: #f0e68c;
+}
+
+.subText--dark{
+    color: #fff;
+}
+
+.header--dark{
+    background-color:#222
+}
+
+.overview--dark{
+    background-color: #1a1a1a
+}
+
+.background--dark{
+    background-color:#232323;
+}
+
+

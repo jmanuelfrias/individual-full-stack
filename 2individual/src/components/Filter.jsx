@@ -10,7 +10,7 @@ const Filter = () => {
     const {  updateSearchBox } = useContext(LibraryContext)
 
     return (
-        <div className="container filter">
+        <div className="container filter boxes--dark">
             <div className="filter__selector">
                 <p className="filter__text">Filtro por género</p>
                 {/*Caja del filtro donde tenemos un on Change que llama a la función de actualizar lo guardado*/}

@@ -1,4 +1,9 @@
 .footer{
     text-align: center;
-    min-height: 5vh;
+    min-height: 8vh;
+}
+
+.header-footer__text{
+    margin: 0px;
+    padding-top: 10px;
 }

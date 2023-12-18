@@ -12,6 +12,9 @@
     margin: 0px;
 }
 
+.botones__control{
+    margin-left: 0px;
+}
 
 .datepicker__error{
     color:red;

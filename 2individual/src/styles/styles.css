@@ -1,7 +1,5 @@
 /* Estilo general en modo oscuro */
 body {
-    background-color: #232323;
-    color: #fff;
     font-family: 'Arial', sans-serif;
 }
 
@@ -16,7 +14,7 @@ a {
 
 /*To fill the screen*/
 .main__div{
-    min-height: 80vh;
+    min-height: 82vh;
 }
 
 .header-footer {
@@ -24,10 +22,6 @@ a {
     padding: 10px;
     text-align: center;
 
-}
-
-.header-footer__text {
-    color: #f0e68c;
 }
 
 .center-text {

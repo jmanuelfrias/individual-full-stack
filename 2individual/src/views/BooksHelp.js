@@ -5,7 +5,7 @@ import '../styles/styles.css';
 export const BooksHelp=() =>{
 
     return (
-        <div className="help-div main-div container">
+        <div className="help-div main__div container">
             <h1>Sección de ayuda</h1>
             <p>Para tomar prestado un libro, sigue los siguientes pasos:</p>
             <ol>

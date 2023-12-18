@@ -12,7 +12,7 @@ export const Book= ({id,title, yearPublication, author, caratula, availability, 
 
 
     return (
-        <div className="bookcard">
+        <div className="bookcard boxes--dark mainText--dark">
             <h3 className="bookcard__title bookcard__text">{title} ({yearPublication})</h3>
             <h4 className="bookcard__text">{author}</h4>
             <img className="bookcard__caratula" src={caratula} alt="Portada del libro"/>
