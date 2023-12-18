@@ -8,7 +8,7 @@ export const BookHomePage=() =>{
 
     return (
       <div className="home-div container main-div">
-          <h1>Bienvenido a la UNIR Library!!</h1>
+          <h1 className="home-header">Bienvenido a la UNIR Library!!</h1>
           <div className="home-libros">
               <div className="libros-informacion">
                   <h2>¿Qué puedo hacer en la biblioteca?</h2>

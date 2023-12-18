@@ -1,5 +1,4 @@
-import {createContext, useContext, useState, useCallback, useEffect} from 'react';
-import {LibraryContext} from "../context/LibraryContext";
+import { useState, useCallback} from 'react';
 
 //Funciones para actualizar la vista según el filtro usado
 export const useSelectedFilter=() => {

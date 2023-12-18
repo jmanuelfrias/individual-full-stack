@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from '../../resources/images/Spinner-0.5s-314px.gif'
 import house from '../icons/house-door-fill.svg'
 import book from '../icons/book-fill.svg'
 import loan from '../icons/basket-fill.svg'

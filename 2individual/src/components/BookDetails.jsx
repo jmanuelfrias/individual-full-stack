@@ -1,9 +1,7 @@
 import React, {useContext, useState} from "react";
 import {useParams} from "react-router-dom";
 import {LibraryContext} from "../context/LibraryContext";
-//import '../styles/movie.css'
 import '../styles/BookDetails.css'
-//import {useNavigate} from "react-router";
 import {handleButtonClick, handlePopupClose} from "../hooks/usePopup";
 import BookPopUp from "./BookPopUp.jsx";
 

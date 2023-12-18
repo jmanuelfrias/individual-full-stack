@@ -5,7 +5,6 @@ import {Book} from "../components/Book";
 
 import {BookList} from "../components/BookList";
 import {LibraryContext} from "../context/LibraryContext";
-import {LoanedBookList} from "../components/LoanedBookList";
 
 export const Prestamos = () => {
 

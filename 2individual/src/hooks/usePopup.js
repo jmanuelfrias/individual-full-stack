@@ -1,6 +1,4 @@
 // usePopup.js
-import React, {useContext} from 'react';
-import {LibraryContext} from "../context/LibraryContext";
 
 export const handleButtonClick = (setPopupVisible) => {
     setPopupVisible(true);
