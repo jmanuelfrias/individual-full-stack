@@ -9,13 +9,9 @@ import BookPopUp from "./BookPopUp.jsx";
 
 export const BookDetails = () => {
     const { bookId } = useParams();
-    const { books, updateBookAvailability } = useContext(LibraryContext);
+    const { books, updateBookAvailability,handleDevolution, handleLoan } = useContext(LibraryContext);
     const book = books.find(r => r.id === bookId);
 
-    const handleDevolution = () => {
-        const updatedAvailability = parseInt(book.availability, 10) + 1;
-        updateBookAvailability(book.id, updatedAvailability,"","",true);    };
-    //const navigate = useNavigate();
     const [isPopupVisible, setPopupVisible] = useState(false);
 
 
@@ -26,19 +22,10 @@ export const BookDetails = () => {
 
     const handleBorrowButtonClick = () => {
         handleButtonClick(setPopupVisible);
-        //updateBookAvailability(book.id, book.availability - 1);
     };
 
     const handleBorrow = (selectedDate) => {
-        const today = new Date();
-
-        const day = String(today.getDate()).padStart(2, '0');
-        const month = String(today.getMonth() + 1).padStart(2, '0'); // Month is zero-based, so we add 1
-        const year = today.getFullYear();
-
-        const todayFormatted = `${day}/${month}/${year}`;
-
-         updateBookAvailability(book.id, book.availability - 1,selectedDate, todayFormatted ,false);
+        handleLoan(book,selectedDate);
     };
 
 
@@ -58,7 +45,6 @@ export const BookDetails = () => {
                 <p>Calificación: {book.puntuation} / 5</p>
                 <p>Volumenes disponibles : {book.availability}</p>
 
-                {/*Ahora tengo control de mirar si el libro está prestado al usuario o no*/}
                 {book.loaned === "no" && (
                    <div className="information-handling">
                     <button onClick={handleBorrowButtonClick}>Coger prestado el libro</button>
@@ -68,7 +54,7 @@ export const BookDetails = () => {
                     {book.loaned === "yes" && (
                     <>
                         <p className="loaned-message">Ya tienes este libro en tu biblioteca</p>
-                        <button onClick={handleDevolution}>Devolver libro</button>
+                        <button onClick={()=>handleDevolution(book)}>Devolver libro</button>
                     </>
                     )}
 

@@ -5,12 +5,8 @@ import {LibraryContext} from "../context/LibraryContext";
 
 export const Book= ({id,title, yearPublication, author, caratula, availability, loaned}) =>{
 
-    const { books, updateBookAvailability } = useContext(LibraryContext);
+    const { books, handleDevolution } = useContext(LibraryContext);
     const book = books.find(r => r.id === id);
-
-    const handleDevolution = () => {
-        const updatedAvailability = parseInt(book.availability, 10) + 1;
-        updateBookAvailability(book.id, updatedAvailability,"","",true);    };
 
 
     return (
@@ -23,7 +19,7 @@ export const Book= ({id,title, yearPublication, author, caratula, availability, 
                 <button className="bookcard-button">Ver detalles</button>
             </Link>
             { (loaned==="yes") ?(
-                <button onClick={handleDevolution}>Devolver libro</button>):null
+                <button onClick={()=>handleDevolution(book)}>Devolver libro</button>):null
             }
         </div>
     );

@@ -5,14 +5,9 @@ import {LibraryContext} from "../context/LibraryContext";
 
 export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDate, loanedDate, availability}) =>{
 
-    const { books, updateBookAvailability } = useContext(LibraryContext);
+    const { books, handleDevolution } = useContext(LibraryContext);
     const book = books.find(r => r.id === id);
-    const today =new Date();
 
-    const handleDevolution = () => {
-        const updatedAvailability = parseInt(book.availability, 10) + 1;
-        updateBookAvailability(book.id, updatedAvailability,"","",true);
-    };
 
     const checkDate =() => {
         const fechaPartida = loanedDate.split('/');
@@ -41,7 +36,7 @@ export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDa
                     <Link to={`/books/${id}`}>
                         <button>Ver detalles</button>
                     </Link>
-                    <button onClick={handleDevolution}>Devolver libro</button>
+                    <button onClick={() =>handleDevolution(book)}>Devolver libro</button>
                 </div>
 
             </div>
