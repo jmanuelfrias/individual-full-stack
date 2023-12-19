@@ -37,10 +37,10 @@ const Layout = ({ children }) => {
         <>
             <Header />
             <div className={`layout ${isDarkMode ? "subText--dark background--dark" : "subText--light background--light"}`}>
-                <div className="mainLayout-navBar">
+                <div className="mainLayout__navBar">
                     <NavBar />
                 </div>
-                <div className="mainLayout-children">
+                <div className="mainLayout__children">
                     {children}
                 </div>
             </div>

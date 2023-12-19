@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Cambiado los colores de dark a colores propios">
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Cmbiado los colores de notificacion y error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookPopUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookPopUp.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/BookDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookDetails.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/BookPopUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookPopUp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/colors/colors--dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/colors/colors--dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/colors/colors--light.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/colors/colors--light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702977373389</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Cmbiado los colores de notificacion y error">
+      <option name="closed" value="true" />
+      <created>1702980932160</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1702980932160</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +345,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Commiting index.js.&#10;Probando el datepicker" />
     <MESSAGE value="subiendo cosas antiguas para que itre el depoly del vercel" />
     <MESSAGE value="Prueba random" />
     <MESSAGE value="Añadiendo el datepicker" />
@@ -365,6 +369,7 @@
     <MESSAGE value="Arreglados varios colores" />
     <MESSAGE value="El cursor ahora parece que hace click en algo sobre el icono de dark mode" />
     <MESSAGE value="Cambiado los colores de dark a colores propios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambiado los colores de dark a colores propios" />
+    <MESSAGE value="Cmbiado los colores de notificacion y error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cmbiado los colores de notificacion y error" />
   </component>
 </project>

@@ -5,10 +5,12 @@
 
 .libros__informacion{
     margin-top:0px;
+    padding-right: 10px;
 }
 
 .libros__nuevos{
     margin-top:0px;
+    width: 100%;
 }
 
 .informacion__detallada{

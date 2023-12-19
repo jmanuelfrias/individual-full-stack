@@ -14,7 +14,7 @@ a {
 
 /*To fill the screen*/
 .main__div{
-    min-height: 82vh;
+    height: 100%;
 }
 
 .header-footer {
