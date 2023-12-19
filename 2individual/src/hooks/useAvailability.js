@@ -1,10 +1,10 @@
 // useAvailability.js
-import {useCallback, useContext} from 'react';
+import {useCallback} from 'react';
 
-//En la seccion de devolution si esta es true, quitaremos el loaned y la loanedDate
-//Si lo que estamos haceidno es coger un libro, devolution sera false y marcaremos loanes a yes y pondremos un selected Date
+//Metodos para cotrolar la avilability de los libros
 const useAvailability = (setBooks) => {
-    // Custom hook for updating book availability
+
+    //Utilizamos la función de setBooks para cargar los libros que ya hay en la aplicación modificando el que corresponda con el id que se pase
     const updateBookAvailability = useCallback((bookId, newAvailability, selectedDate, today ,devolution) => {
         setBooks((prevBooks) =>
             prevBooks.map((book) =>
@@ -17,15 +17,16 @@ const useAvailability = (setBooks) => {
         );
     }, [setBooks]);
 
-
+    //Para las devoluciones sumamos uno al availability del libro y quitamos las fechas
     const handleDevolution = useCallback((book) => {
         updateBookAvailability(book.id, book.availability + 1,"","",true);
     }, []);
 
+    //Para los prestamos tenemos que calcular el día que es hoy y formatearlo a dd/mm/yyyy para incluirlo cuando cambiamos la availability
     const handleLoan = useCallback((book ,selectedDate) => {
         const today = new Date();
         const day = String(today.getDate()).padStart(2, '0');
-        const month = String(today.getMonth() + 1).padStart(2, '0'); // Month is zero-based, so we add 1
+        const month = String(today.getMonth() + 1).padStart(2, '0');
         const year = today.getFullYear();
         const todayFormatted = `${day}/${month}/${year}`;
 

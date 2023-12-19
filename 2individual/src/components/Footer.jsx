@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import '../styles/Footer.css'
 import {LibraryContext} from "../context/LibraryContext";
 
+//Footer de la aplicación
 export const Footer = () => {
     const { isDarkMode } = useContext(LibraryContext);
 

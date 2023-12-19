@@ -5,12 +5,14 @@ import {LibraryContext} from "../context/LibraryContext";
 import {DevolverButton} from "./DevolverButton";
 import {BookcardCaratula} from "./BookcardCaratula";
 
-export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDate, loanedDate, availability}) =>{
+//Bookcard de los libros prestados
+export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDate, loanedDate}) =>{
     const { isDarkMode } = useContext(LibraryContext);
-    const { books, handleDevolution } = useContext(LibraryContext);
+    const { books } = useContext(LibraryContext);
     const book = books.find(r => r.id === id);
 
 
+    //Comprobar si la fecha de hoy es superior a la fecha máxima de prestamo del libro
     const checkDate =() => {
         const fechaPartida = loanedDate.split('/');
         const fechaLoaned = new Date(fechaPartida[2], fechaPartida[1] - 1, fechaPartida[0]);
@@ -21,7 +23,6 @@ export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDa
         }
         return result;
     }
-
 
 
     return (
@@ -42,7 +43,6 @@ export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDa
                 </div>
 
             </div>
-
         </div>
     );
 }

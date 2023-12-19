@@ -7,21 +7,26 @@ import BookPopUp from "./BookPopUp.jsx";
 import {DevolverButton} from "./DevolverButton";
 import {BookcardCaratula} from "./BookcardCaratula";
 
+//Details del libro. También contiene la funcionalidad para pedir el libro y que acabe en nuestro prestamo
 export const BookDetails = () => {
-    const { bookId } = useParams();
-    const { books, updateBookAvailability,handleDevolution, handleLoan } = useContext(LibraryContext);
-    const book = books.find(r => r.id === bookId);
     const { isDarkMode } = useContext(LibraryContext);
     const [isPopupVisible, setPopupVisible] = useState(false);
 
+    const { bookId } = useParams();
+    const { books, handleLoan } = useContext(LibraryContext);
+
+    //Intentar encontrar el libro que se quiere mostrar
+    const book = books.find(r => r.id === bookId);
     if (!book) {
         return <h2>Ese libro no está en la biblioteca</h2>;
     }
 
+    //Encargado de invocar el despliegue del popup para coger prestado el libro
     const handleBorrowButtonClick = () => {
         handleButtonClick(setPopupVisible);
     };
 
+    //Si el Popup va bien y devuelve el onBorrow, invocamos la acción de coger el p´restamo
     const handleBorrow = (selectedDate) => {
         handleLoan(book,selectedDate);
     };
@@ -43,18 +48,24 @@ export const BookDetails = () => {
                 <p>Calificación: {book.puntuation} / 5</p>
                 <p>Volumenes disponibles : {book.availability}</p>
 
-                {book.loaned === "no" && (
+                {/*Si el libro no está prestado, ponemos el botón para desplegar el popup de reserva
+                   Si lo está, ponemos un mensaje de información y el botón de devolución*/}
+                {book.loaned === "no" ? (
                    <div className="information__handling">
                     <button onClick={handleBorrowButtonClick}>Coger prestado el libro</button>
-                    {isPopupVisible && <BookPopUp onClose={() => handlePopupClose(setPopupVisible)} onBorrow={handleBorrow} />}
+                       {/*Dependiendo del estado de isPopupVisible, enseñamos el popup o no.
+                          Si está abierto y devuelve un handleBorrow, activamos esta función de préstamo */}
+                    {isPopupVisible ?
+                        (<BookPopUp onClose={() => handlePopupClose(setPopupVisible)} onBorrow={handleBorrow} />)
+                        : (<></>)
+                    }
                    </div>
-                       )}
-                    {book.loaned === "yes" && (
+                ) : (
                     <>
                         <p className={`information__loaned   ${isDarkMode ? "notification--dark" : "notification--light"}`}>Ya tienes este libro en tu biblioteca</p>
                         <DevolverButton book={book} />
                     </>
-                    )}
+                )}
 
             </div>
 

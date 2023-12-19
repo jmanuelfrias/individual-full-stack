@@ -9,7 +9,7 @@ import {BookcardCaratula} from "./BookcardCaratula";
 export const Book= ({id,title, yearPublication, author, caratula, availability, loaned}) =>{
 
     const { isDarkMode } = useContext(LibraryContext);
-    const { books, handleDevolution } = useContext(LibraryContext);
+    const { books } = useContext(LibraryContext);
     const book = books.find(r => r.id === id);
 
 

@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/BookcardCaratula.css'
 
+//Foto del libro que poner en las bookcards y en el details
 export const BookcardCaratula = ({image}) => {
     return(
       <>

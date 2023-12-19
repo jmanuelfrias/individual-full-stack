@@ -6,6 +6,7 @@ import '../styles/BookList.css'
 import Filter from "./Filter";
 import {LoanedBook} from "./LoanedBook";
 
+//Despliegue de las bookcards para las pantallas princiapales
 export const BookList =({ filter }) => {
     const { books } = useContext(LibraryContext);
     const { selectedFilter } = useContext(LibraryContext);
@@ -13,7 +14,7 @@ export const BookList =({ filter }) => {
 
     const [showLoading, setShowLoading] = useState(true);
 
-    // Define viewFilter based on the provided filter
+    //Define el tipo de libros que se van a mostrar dependiendo del parámeto filter del componente (en qué view estamos)
     const viewFilter = () => {
         if (filter === "new") {
             return books.filter(item => item.tags.toLowerCase().includes("new"));
@@ -24,18 +25,17 @@ export const BookList =({ filter }) => {
         }
     };
 
+    //Aplica los filtros de la barra de filtros
     const filteredData = viewFilter().filter(item =>
         item.genre.toLowerCase().includes(selectedFilter.toLowerCase()) && item.title.includes(selectedSearch)
     );
 
-
+    // Esperamos 3 segundos a que esté el filteredData disponible. Mientras tanto mostramos un icono de Loading
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setShowLoading(false);
         }, 3000);
-
         return () => {
-            // Clear the timeout if the component unmounts or if filteredData becomes available
             clearTimeout(timeoutId);
         };
     }, [filteredData]);
@@ -50,7 +50,7 @@ export const BookList =({ filter }) => {
                 ) : (
                     filteredData.length > 0 ? (
                         filteredData.map((book, index) => (
-
+                            //Dependiendo de la pantalla que sea mostramos un tipo de libros u otros
                             filter === "loaned" ? (
                                     <LoanedBook
                                         key={index}

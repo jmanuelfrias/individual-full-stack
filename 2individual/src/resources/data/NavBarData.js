@@ -7,7 +7,7 @@ import loan_light from '../icons/basket-fill-light.svg'
 import help from '../icons/question.svg'
 import help_light from '../icons/question-light.svg'
 
-export const SidebarData = [
+export const NavBarData = [
 
 {
         title: 'Home',
