@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Vista de error
 function NotFound() {
     return (
         <div className="main__div">

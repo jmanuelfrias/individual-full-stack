@@ -1,4 +1,4 @@
-/* Estilo general en modo oscuro */
+
 body {
     font-family: 'Arial', sans-serif;
 }
@@ -12,16 +12,13 @@ a {
     color: inherit;
 }
 
-/*To fill the screen*/
 .main__div{
     height: 100%;
 }
 
 .header-footer {
-
     padding: 10px;
     text-align: center;
-
 }
 
 .center-text {

@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React from 'react';
 import {Footer} from "./components/Footer";
 import {useBooks} from "./hooks/useBooks";
 import {LibraryContext} from "./context/LibraryContext";
@@ -8,6 +8,7 @@ import {useSearchBox} from "./hooks/useSearchBox";
 import {useDateValidator} from "./hooks/useDateValidator";
 import {useDarkMode} from "./hooks/useDarkMode";
 
+//Aplicación principal. Utilizada también como Provider para el resto
 function App() {
 
     const {books, updateBookAvailability, handleDevolution,handleLoan} = useBooks();

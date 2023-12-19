@@ -1,9 +1,8 @@
 import React from "react";
 import '../styles/styles.css';
 
-
+//Vista con ayuda más detallada
 export const BooksHelp=() =>{
-
     return (
         <div className="help-div main__div container">
             <h1>Sección de ayuda</h1>
@@ -22,8 +21,6 @@ export const BooksHelp=() =>{
                 <li>Hacer click en el botón de "Devolver Libro"</li>
             </ol>
         </div>
-
-
     );
 }
 

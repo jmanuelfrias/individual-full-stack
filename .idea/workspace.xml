@@ -4,17 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Primeros comentarios y refactor">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useDarkMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useDarkMode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useDateValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useDateValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/usePopup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useRedirection.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useRedirection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useSearchBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useSearchBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/BookData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/BookData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/CategoryData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/CategoryData.js" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Mas comentarios y eliminación del hook de usePopup">
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Loading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Loading.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/BookPopUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookPopUp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Landing.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Overview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Prestamos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookLanding.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookLanding.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/NotFound.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/Prestamos.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/Prestamos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -372,7 +374,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703018086505</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Mas comentarios y eliminación del hook de usePopup">
+      <option name="closed" value="true" />
+      <created>1703024853915</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1703024853915</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +400,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Intento de cambio de availability con el popup" />
     <MESSAGE value="Home y prestamos implementados con distintas partes.&#10;Falta arreglar lo de la fecha a la hora de hacer un loan. Mirar si se puede cambiar la interfaz de prestamos para que se vea distinta" />
     <MESSAGE value="Añadido un buscador por nombre, separado algunas funciones en hooks aparte y validación de la fecha incluida" />
     <MESSAGE value="Cambio para las book loaned utilizando clases específicas para darle otro look-and-feel" />
@@ -415,6 +424,7 @@
     <MESSAGE value="alturas corregidas" />
     <MESSAGE value="alturas corregidas footer para no dejar fondo blanco" />
     <MESSAGE value="Primeros comentarios y refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primeros comentarios y refactor" />
+    <MESSAGE value="Mas comentarios y eliminación del hook de usePopup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mas comentarios y eliminación del hook de usePopup" />
   </component>
 </project>

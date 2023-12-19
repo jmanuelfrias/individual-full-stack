@@ -4,10 +4,9 @@ import '../styles/Home.css'
 import {BookList} from "../components/BookList";
 import {LibraryContext} from "../context/LibraryContext";
 
-
+//Pagina inciial de la aplicación con explicaciones y libros más recientes
 export const BookHomePage=() =>{
     const { isDarkMode } = useContext(LibraryContext);
-
     return (
       <div className="home container main__div">
           <h1 className="home__header">Bienvenido a la UNIR Library!!</h1>
@@ -26,19 +25,13 @@ export const BookHomePage=() =>{
                           <li> Tras esto, el libro aparecerá en la sección de "Préstamos"</li>
                       </ol>
                   </div>
-
               </div>
               <div className="libros__nuevos">
                   <h2 className="center-text">Mira las novedades que hemos traído</h2>
                   <BookList filter="new"/>
               </div>
-
-
           </div>
-
       </div>
-
-
     );
 }
 
