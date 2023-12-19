@@ -12,7 +12,7 @@ export const BookHomePage=() =>{
           <div className="home__libros">
               <div className="libros__informacion">
                   <h2>¿Qué puedo hacer en la biblioteca?</h2>
-                  <div className="informacion__detallada boxes--dark">
+                  <div className="informacion__detallada boxes--color boxes--dark">
                       <p>Aquí podrás tomar prestado libros durante un período de tiempo</p>
                       <p>Para tomar prestado un libro, sigue los siguientes pasos:</p>
                       <ol>

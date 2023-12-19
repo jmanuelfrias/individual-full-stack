@@ -30,7 +30,7 @@ function BookRouter() {
 const Layout = ({children}) => (
     <>
         <Header />
-        <div className="layout  subText--dark background--dark">
+        <div className="layout subText--color  subText--dark background--color background--dark ">
             <div className="mainLayout-navBar">
                 <NavBar />
             </div>

@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Updated all clases to BEM">
-      <change afterPath="$PROJECT_DIR$/2individual/src/styles/colors--dark.css" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="changed the colors to individual jss and speciic classes to be able to modify them">
+      <change afterPath="$PROJECT_DIR$/2individual/src/styles/colors/colors--light.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/Book.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Book.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
@@ -14,19 +14,9 @@
       <change beforePath="$PROJECT_DIR$/2individual/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/routes/BookRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Book.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Book.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/BookDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookDetails.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/BookPopUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookPopUp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Filter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/LoanedBook.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/LoanedBook.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Overview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/colors--dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/colors/colors--dark.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/views/BookOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BooksHelp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/individual/src/views/Overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/individual/src/views/Overview.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/xemaf/WebstormProjects/forked/individual-full-stack/2individual/src/resources/icons",
+    "last_opened_file_path": "C:/Users/xemaf/WebstormProjects/forked/individual-full-stack/2individual/src/styles/colors",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -89,11 +79,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src\styles\colors" />
       <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src\resources\icons" />
       <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src\views" />
       <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src\hooks" />
       <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src\context" />
-      <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\xemaf\WebstormProjects\forked\individual-full-stack\2individual\src\styles\colors" />
@@ -273,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702938987434</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="changed the colors to individual jss and speciic classes to be able to modify them">
+      <option name="closed" value="true" />
+      <created>1702942976719</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702942976719</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +310,7 @@
     <MESSAGE value="Separado el book data en una clase de datos especifica (como los datos del navbar o los posibles filtros)&#10;Limpieza de los imports y código que no va" />
     <MESSAGE value="Nuevo componente para tener el boton de devolución agrupado" />
     <MESSAGE value="Updated all clases to BEM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated all clases to BEM" />
+    <MESSAGE value="changed the colors to individual jss and speciic classes to be able to modify them" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the colors to individual jss and speciic classes to be able to modify them" />
   </component>
 </project>

@@ -24,7 +24,7 @@ export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDa
 
 
     return (
-        <div className="loaned__bookcard mainText--dark boxes--dark">
+        <div className="loaned__bookcard mainText--color mainText--dark boxes--color boxes--dark">
             <div  className="loaned__bookcard__caratula">
                 <img className="bookcard__caratula" src={caratula} alt="Portada del libro"/>
             </div>

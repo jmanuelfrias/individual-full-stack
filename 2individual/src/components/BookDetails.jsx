@@ -29,7 +29,7 @@ export const BookDetails = () => {
 
 
     return (
-        <div className="book__details main__div mainText--dark details--dark">
+        <div className="book__details main__div mainText--color mainText--dark details--color details--dark">
             <div className="details__caratula container">
                 <img className="details__caratula" src={book.caratula} alt="Carátula del libro" />
             </div>

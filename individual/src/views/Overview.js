@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import '../styles/styles.css';
-import '../styles/colors--dark.css'
+import '../styles/colors/colors--dark.css'
+import '../styles/colors/colors--light.css'
 import '../styles/Overview.css'
 import {Book} from "../components/Book";
 
