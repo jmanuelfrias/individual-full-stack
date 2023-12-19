@@ -3,6 +3,7 @@ import '../styles/LoanedBook.css'
 import {Link} from "react-router-dom";
 import {LibraryContext} from "../context/LibraryContext";
 import {DevolverButton} from "./DevolverButton";
+import {BookcardCaratula} from "./BookcardCaratula";
 
 export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDate, loanedDate, availability}) =>{
     const { isDarkMode } = useContext(LibraryContext);
@@ -26,7 +27,7 @@ export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDa
     return (
         <div className={`loaned__bookcard ${isDarkMode ? "mainText--dark boxes--dark": "mainText--light boxes--light"}`}>
             <div  className="loaned__bookcard__caratula">
-                <img className="bookcard__caratula" src={caratula} alt="Portada del libro"/>
+                <BookcardCaratula image={caratula} />
             </div>
             <div>
                 <h3>{title} ({yearPublication})</h3>

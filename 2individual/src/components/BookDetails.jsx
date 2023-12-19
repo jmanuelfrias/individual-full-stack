@@ -5,6 +5,7 @@ import '../styles/BookDetails.css'
 import {handleButtonClick, handlePopupClose} from "../hooks/usePopup";
 import BookPopUp from "./BookPopUp.jsx";
 import {DevolverButton} from "./DevolverButton";
+import {BookcardCaratula} from "./BookcardCaratula";
 
 export const BookDetails = () => {
     const { bookId } = useParams();
@@ -29,7 +30,7 @@ export const BookDetails = () => {
     return (
         <div className={`book__details main__div ${isDarkMode ? " mainText--dark details--dark" : "mainText--light details--light"}`}>
             <div className="details__caratula container">
-                <img className="details__caratula" src={book.caratula} alt="Carátula del libro" />
+                <BookcardCaratula image={book.caratula} />
             </div>
             <div className="details__information">
                 <h1>{book.title} </h1>
