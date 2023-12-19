@@ -30,7 +30,7 @@ const Filter = () => {
                 </select>
             </div>
             <div className="filter__searchBox">
-                <p className={`filter__text ${isDarkMode ? "mainText--dark" : "mainText--light"}`}>Buscar nombre</p>
+                <p className={`filter__text ${isDarkMode ? "mainText--dark" : "mainText--light"}`}>Buscar título</p>
                 {/*Al igual que el otro filtro, cuando haya cambios en este input, cambiar el estado del searchbox*/}
                 <input className="searchBox__input"
                        placeholder="Buscador por nombre"
