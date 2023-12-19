@@ -18,5 +18,6 @@ header {
 
 .darkMode__icon{
     padding-top: 10px;
+    cursor: pointer;
 
 }

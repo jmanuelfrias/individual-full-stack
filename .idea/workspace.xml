@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="New icon for dark mode">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Landing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/colors/colors--light.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/colors/colors--light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookLanding.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookLanding.js" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Arreglados varios colores">
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Header.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702951315485</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Arreglados varios colores">
+      <option name="closed" value="true" />
+      <created>1702952070962</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1702952070962</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +317,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cambiado a la carpeta 2 individual por problemas con el codigo original" />
     <MESSAGE value="NavBar operativa,zona de libros central con filtro operativo por genero&#10;Se añaden además las pantallas de Home y Ayuda&#10;Ya no aparece el dispatcher" />
     <MESSAGE value="Intentnado meter el popup para actualizar los pedidos" />
     <MESSAGE value="Commiting index.js.&#10;Probando el datepicker" />
@@ -339,6 +341,7 @@
     <MESSAGE value="Resuelto bug que hacía que todo no fuese por igual. Añadido hook de darkMode" />
     <MESSAGE value="New design for light mode" />
     <MESSAGE value="New icon for dark mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="New icon for dark mode" />
+    <MESSAGE value="Arreglados varios colores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglados varios colores" />
   </component>
 </project>
