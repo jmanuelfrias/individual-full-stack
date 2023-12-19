@@ -1,14 +1,16 @@
 import {useCallback, useState} from "react";
 
-
+//Hook para la validación de fechas en la aplicación
+//Guarda también los mensajes de error que deben aparecer
 export const useDateValidator = () => {
     const [error, setError] = useState(null)
 
+    //Calcular la resta de meses entre 2 fechas
     let substractMonths = (selectedDate,today) => {
         return (selectedDate.getFullYear() - today.getFullYear()) * 12 + (selectedDate.getMonth() - today.getMonth());
     }
 
-
+    //Validar la fecha siguiendo el formato dd/mm/yyyy y comprobando que sea un dia posterior al actual pero inferior a 2 meses
     let validateDate= useCallback((date)=> {
         const dateRegex = /^(0[1-9]|[1-2][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/\d{4}$/;
         let result=true;
@@ -19,7 +21,7 @@ export const useDateValidator = () => {
         else {
             const selectedDate = new Date(
                 parseInt(date.split('/')[2]),
-                parseInt(date.split('/')[1]) - 1, // Months are zero-indexed
+                parseInt(date.split('/')[1]) - 1,
                 parseInt(date.split('/')[0])
             );
             const today = new Date();

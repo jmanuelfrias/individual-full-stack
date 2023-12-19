@@ -7,8 +7,8 @@ import loan_light from '../icons/basket-fill-light.svg'
 import help from '../icons/question.svg'
 import help_light from '../icons/question-light.svg'
 
+//Los datos de la barra de navegación
 export const NavBarData = [
-
 {
         title: 'Home',
         path: '/home',

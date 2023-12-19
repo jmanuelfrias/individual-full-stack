@@ -12,9 +12,8 @@ import {BookHomePage} from "../views/BookHomePage";
 import {Prestamos} from "../views/Prestamos";
 import {LibraryContext} from "../context/LibraryContext";
 
+//PAra definir las distintas rutas posibles
 function BookRouter() {
-
-
     return (
         <BrowserRouter>
             <Routes>
@@ -30,9 +29,9 @@ function BookRouter() {
     );
 }
 
+//Layout básico de la aplicación. Necesita tener el contexto del modo día y noche para el background
 const Layout = ({ children }) => {
     const { isDarkMode } = useContext(LibraryContext);
-
     return (
         <>
             <Header />

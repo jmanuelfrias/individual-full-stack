@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="alturas corregidas footer para no dejar fondo blanco">
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Primeros comentarios y refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Book.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Book.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookPopUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookPopUp.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookcardCaratula.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookcardCaratula.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/DevolverButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/DevolverButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Filter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Loading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Loading.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/LoanedBook.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/context/LibraryContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/context/LibraryContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useDarkMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useDarkMode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useDateValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useDateValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/usePopup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useRedirection.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useRedirection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/hooks/useSearchBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/hooks/useSearchBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/BookData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/BookData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/CategoryData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/CategoryData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -369,7 +364,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702989318559</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Primeros comentarios y refactor">
+      <option name="closed" value="true" />
+      <created>1703018086505</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1703018086505</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +390,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Añadido el datepicker css para que no pete" />
     <MESSAGE value="Intento de cambio de availability con el popup" />
     <MESSAGE value="Home y prestamos implementados con distintas partes.&#10;Falta arreglar lo de la fecha a la hora de hacer un loan. Mirar si se puede cambiar la interfaz de prestamos para que se vea distinta" />
     <MESSAGE value="Añadido un buscador por nombre, separado algunas funciones en hooks aparte y validación de la fecha incluida" />
@@ -412,6 +414,7 @@
     <MESSAGE value="Added component BookCard Caratula" />
     <MESSAGE value="alturas corregidas" />
     <MESSAGE value="alturas corregidas footer para no dejar fondo blanco" />
-    <option name="LAST_COMMIT_MESSAGE" value="alturas corregidas footer para no dejar fondo blanco" />
+    <MESSAGE value="Primeros comentarios y refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primeros comentarios y refactor" />
   </component>
 </project>

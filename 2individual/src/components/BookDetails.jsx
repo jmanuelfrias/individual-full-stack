@@ -2,7 +2,6 @@ import React, {useContext, useState} from "react";
 import {useParams} from "react-router-dom";
 import {LibraryContext} from "../context/LibraryContext";
 import '../styles/BookDetails.css'
-import {handleButtonClick, handlePopupClose} from "../hooks/usePopup";
 import BookPopUp from "./BookPopUp.jsx";
 import {DevolverButton} from "./DevolverButton";
 import {BookcardCaratula} from "./BookcardCaratula";
@@ -23,7 +22,7 @@ export const BookDetails = () => {
 
     //Encargado de invocar el despliegue del popup para coger prestado el libro
     const handleBorrowButtonClick = () => {
-        handleButtonClick(setPopupVisible);
+        setPopupVisible(true);
     };
 
     //Si el Popup va bien y devuelve el onBorrow, invocamos la acción de coger el p´restamo
@@ -56,7 +55,7 @@ export const BookDetails = () => {
                        {/*Dependiendo del estado de isPopupVisible, enseñamos el popup o no.
                           Si está abierto y devuelve un handleBorrow, activamos esta función de préstamo */}
                     {isPopupVisible ?
-                        (<BookPopUp onClose={() => handlePopupClose(setPopupVisible)} onBorrow={handleBorrow} />)
+                        (<BookPopUp onClose={() => setPopupVisible(false)} onBorrow={handleBorrow} />)
                         : (<></>)
                     }
                    </div>
