@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Resuelto bug que hacía que todo no fuese por igual. Añadido hook de darkMode">
-      <change afterPath="$PROJECT_DIR$/2individual/src/resources/icons/basket-fill-light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/resources/icons/book-fill-light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/resources/icons/house-door-fill-light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2individual/src/resources/icons/question-light.svg" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="New design for light mode">
+      <change afterPath="$PROJECT_DIR$/2individual/src/resources/icons/sun-fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2individual/src/resources/icons/sun.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/NavBarData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2individual/src/styles/colors/colors--light.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/colors/colors--light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/Header.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702947869775</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="New design for light mode">
+      <option name="closed" value="true" />
+      <created>1702949903538</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1702949903538</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +329,7 @@
     <MESSAGE value="changed the colors to individual jss and speciic classes to be able to modify them" />
     <MESSAGE value="Modo oscuro activado. Faltan los colores claros" />
     <MESSAGE value="Resuelto bug que hacía que todo no fuese por igual. Añadido hook de darkMode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resuelto bug que hacía que todo no fuese por igual. Añadido hook de darkMode" />
+    <MESSAGE value="New design for light mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="New design for light mode" />
   </component>
 </project>

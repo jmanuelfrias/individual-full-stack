@@ -2,8 +2,21 @@ header {
     padding: 10px;
     margin:0px;
     min-height:5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__text {
     margin:0px;
+}
+
+.header__darkMode {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.darkMode__icon{
+    padding-top: 10px;
+
 }

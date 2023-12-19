@@ -1,5 +1,7 @@
 import React, {useContext} from "react";
 import '../styles/Header.css'
+import sun_dark from '../resources/icons/sun.svg'
+import sun_light from '../resources/icons/sun-fill.svg'
 import {Link} from "react-router-dom";
 import {LibraryContext} from "../context/LibraryContext";
 
@@ -8,13 +10,12 @@ export const Header = () =>{
 
     return (
         <header className={`header ${isDarkMode ? "header--dark" : "header--light"} `}>
-            <div className="custom-control custom-switch">
-                <input type="checkbox" className="custom-control-input" id="darkSwitch" onClick={toggleDarkMode} />
-                        <label className="custom-control-label" htmlFor="darkSwitch">Cambiar a Modo Oscuro</label>
-            </div>
             <Link to='/'>
                 <h1 className={`header__text header-footer__text ${isDarkMode ? "mainText--dark" : "mainText--light"}`}>UNIR Library</h1>
             </Link>
+            <div className="header__darkMode">
+                <img className="darkMode__icon" src={isDarkMode ? sun_dark : sun_light} alt="Cambio a DarkMode" onClick={toggleDarkMode}/>
+            </div>
         </header>
     );
 }
