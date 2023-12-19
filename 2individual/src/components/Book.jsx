@@ -7,12 +7,13 @@ import {DevolverButton} from "./DevolverButton";
 //Instancias de los libros en las vistas de Home y Overview central
 export const Book= ({id,title, yearPublication, author, caratula, availability, loaned}) =>{
 
+    const { isDarkMode } = useContext(LibraryContext);
     const { books, handleDevolution } = useContext(LibraryContext);
     const book = books.find(r => r.id === id);
 
 
     return (
-        <div className="bookcard boxes--color boxes--dark mainText--color mainText--dark">
+        <div className={`bookcard  ${isDarkMode ? "boxes--dark mainText--dark" : "boxes--light mainText--light" }` }>
             <h3 className="bookcard__title bookcard__text">{title} ({yearPublication})</h3>
             <h4 className="bookcard__text">{author}</h4>
             <img className="bookcard__caratula" src={caratula} alt="Portada del libro"/>

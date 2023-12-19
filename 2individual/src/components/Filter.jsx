@@ -8,9 +8,11 @@ const Filter = () => {
     // Para guardar el filtro seleccionado
     const { selectedFilter, updateSelectedFilter } = useContext(LibraryContext)
     const {  updateSearchBox } = useContext(LibraryContext)
+    const { isDarkMode } = useContext(LibraryContext);
+
 
     return (
-        <div className="container filter boxes--color boxes--dark">
+        <div className={`container filter  ${isDarkMode ? "boxes--dark" : "boxes--light"}`}>
             <div className="filter__selector">
                 <p className="filter__text">Filtro por género</p>
                 {/*Caja del filtro donde tenemos un on Change que llama a la función de actualizar lo guardado*/}

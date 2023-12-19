@@ -1,30 +1,30 @@
 .boxes--light{
-   background-color: #f30808;
-   border: 1px solid #444;
+   background-color: red;
+   border: 1px solid red;
 }
 
 .details--light{
-    background-color: #f30808;
+    background-color: red;
 }
 
 .mainText--light{
-    color: #f30808;
+    color: red;
 }
 
 .subText--light{
-    color: #f30808;
+    color: red;
 }
 
 .header--light{
-    background-color:#f30808
+    background-color:red
 }
 
 .overview--light{
-    background-color: #f30808
+    background-color: red
 }
 
 .background--light{
-    background-color:#f30808;
+    background-color: red;
 }
 
 

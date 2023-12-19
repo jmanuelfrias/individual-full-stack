@@ -5,7 +5,7 @@ import {LibraryContext} from "../context/LibraryContext";
 import {DevolverButton} from "./DevolverButton";
 
 export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDate, loanedDate, availability}) =>{
-
+    const { isDarkMode } = useContext(LibraryContext);
     const { books, handleDevolution } = useContext(LibraryContext);
     const book = books.find(r => r.id === id);
 
@@ -24,7 +24,7 @@ export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDa
 
 
     return (
-        <div className="loaned__bookcard mainText--color mainText--dark boxes--color boxes--dark">
+        <div className={`loaned__bookcard ${isDarkMode ? "mainText--dark boxes--dark": "mainText--light boxes--light"}`}>
             <div  className="loaned__bookcard__caratula">
                 <img className="bookcard__caratula" src={caratula} alt="Portada del libro"/>
             </div>

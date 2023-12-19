@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NotFound from '../views/NotFound';
 import {BookOverview } from "../views/BookOverview";
@@ -10,8 +10,11 @@ import BookLanding from "../views/BookLanding";
 import {BooksHelp} from "../views/BooksHelp";
 import {BookHomePage} from "../views/BookHomePage";
 import {Prestamos} from "../views/Prestamos";
+import {LibraryContext} from "../context/LibraryContext";
 
 function BookRouter() {
+
+
     return (
         <BrowserRouter>
             <Routes>
@@ -27,18 +30,22 @@ function BookRouter() {
     );
 }
 
-const Layout = ({children}) => (
-    <>
-        <Header />
-        <div className="layout subText--color  subText--dark background--color background--dark ">
-            <div className="mainLayout-navBar">
-                <NavBar />
+const Layout = ({ children }) => {
+    const { isDarkMode } = useContext(LibraryContext);
+
+    return (
+        <>
+            <Header />
+            <div className={`layout ${isDarkMode ? "subText--dark background--dark" : "subText--light background--light"}`}>
+                <div className="mainLayout-navBar">
+                    <NavBar />
+                </div>
+                <div className="mainLayout-children">
+                    {children}
+                </div>
             </div>
-            <div className="mainLayout-children">
-                {children}
-            </div>
-        </div>
-    </>
-);
+        </>
+    );
+}
 
 export default BookRouter;
