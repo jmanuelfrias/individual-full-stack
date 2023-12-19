@@ -32,7 +32,7 @@ export const LoanedBook= ({id,title, yearPublication, author, caratula,initialDa
                 <h3>{title} ({yearPublication})</h3>
                 <h4>{author}</h4>
                 <p>Recogido el día : {initialDate}</p>
-                <p className={ checkDate() ? "bookcard__error" : ""}>Disponible hasta el día : {loanedDate}</p>
+                <p className={ checkDate() ? (isDarkMode ? "error--dark" : "error--light")  : ""}>Disponible hasta el día : {loanedDate}</p>
                 <div className="loaned__bookcard__buttons">
                     <Link to={`/books/${id}`}>
                         <button>Ver detalles</button>

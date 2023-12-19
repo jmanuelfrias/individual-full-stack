@@ -27,5 +27,13 @@
     background-color: white;
 }
 
+.notification--light{
+    color:limegreen;
+}
+
+.error--light{
+    color: #d31010;
+    font-weight: bold;
+}
 
 

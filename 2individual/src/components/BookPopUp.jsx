@@ -5,6 +5,8 @@ import {LibraryContext} from "../context/LibraryContext";
 const BookPopUp = ({ onClose, onBorrow }) => {
     const [datepickerValue, setDatepickerValue] = useState('');
     const { error, setError, validateDate} = useContext(LibraryContext)
+    const { isDarkMode } = useContext(LibraryContext);
+
 
     const handleLoanRequest = () => {
         if(validateDate(datepickerValue)){
@@ -31,7 +33,7 @@ const BookPopUp = ({ onClose, onBorrow }) => {
                         value={datepickerValue}
                         onChange={(e) => setDatepickerValue(e.target.value)}
                     />
-                    <p className="datepicker__error">{error}</p>
+                    <p className={`datepicker__error ${isDarkMode ? "error--dark" : "error--light"}`}>{error}</p>
                 </div>
                 <div className="botones__control">
                     <button className="control__boton" onClick={handleClose}>

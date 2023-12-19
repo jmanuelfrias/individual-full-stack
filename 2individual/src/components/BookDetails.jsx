@@ -50,7 +50,7 @@ export const BookDetails = () => {
                        )}
                     {book.loaned === "yes" && (
                     <>
-                        <p className="information__loaned">Ya tienes este libro en tu biblioteca</p>
+                        <p className={`information__loaned   ${isDarkMode ? "notification--dark" : "notification--light"}`}>Ya tienes este libro en tu biblioteca</p>
                         <DevolverButton book={book} />
                     </>
                     )}

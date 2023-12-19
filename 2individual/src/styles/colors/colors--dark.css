@@ -27,4 +27,13 @@
     background-color:#232946;
 }
 
+.notification--dark{
+    color: #1d831d;
+}
+
+.error--dark{
+    color: #ff0000;
+    font-weight: bold;
+}
+
 
