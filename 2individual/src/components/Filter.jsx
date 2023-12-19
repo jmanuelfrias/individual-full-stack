@@ -14,7 +14,7 @@ const Filter = () => {
     return (
         <div className={`container filter  ${isDarkMode ? "boxes--dark" : "boxes--light"}`}>
             <div className="filter__selector">
-                <p className="filter__text">Filtro por género</p>
+                <p className={`filter__text ${isDarkMode ? "mainText--dark" : "mainText--light"}`}>Filtro por género</p>
                 {/*Caja del filtro donde tenemos un on Change que llama a la función de actualizar lo guardado*/}
                 <select className="selector__select"
                         value={selectedFilter}
@@ -30,7 +30,7 @@ const Filter = () => {
                 </select>
             </div>
             <div className="filter__searchBox">
-                <p className="filter__text">Buscar nombre</p>
+                <p className={`filter__text ${isDarkMode ? "mainText--dark" : "mainText--light"}`}>Buscar nombre</p>
 
                 <input className="searchBox__input"
                        placeholder="Buscador por nombre"
