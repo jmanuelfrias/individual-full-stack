@@ -1,14 +1,14 @@
 .boxes--dark{
-    background-color: #333;
+    background-color: #91a0ea;
    border: 1px solid #444;
 }
 
 .details--dark{
-    background-color: #333;
+    background-color: #91a0ea;
 }
 
 .mainText--dark{
-    color: #f0e68c;
+    color:#fff ;
 }
 
 .subText--dark{
@@ -16,15 +16,15 @@
 }
 
 .header--dark{
-    background-color:#222
+    background-color:#232946
 }
 
 .overview--dark{
-    background-color: #1a1a1a
+    background-color: #232946
 }
 
 .background--dark{
-    background-color:#232323;
+    background-color:#232946;
 }
 
 
