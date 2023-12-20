@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Ultimos comentarios y borrado de espacios en blanco">
-      <change beforePath="$PROJECT_DIR$/2individual/src/resources/data/BookData.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/resources/data/BookData.js" afterDir="false" />
+    <list default="true" id="51db76ac-c6a8-4833-a7c1-ade552923397" name="Changes" comment="Cambiar a título">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/components/BookList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/styles/BookList.css" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/styles/BookList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/2individual/src/views/BookHomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -379,7 +382,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703025458249</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Eliminar datos antiguos que no van">
+      <option name="closed" value="true" />
+      <created>1703026809139</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1703026809139</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Cambiar a título">
+      <option name="closed" value="true" />
+      <created>1703028675165</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1703028675165</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,8 +416,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Añadido un buscador por nombre, separado algunas funciones en hooks aparte y validación de la fecha incluida" />
-    <MESSAGE value="Cambio para las book loaned utilizando clases específicas para darle otro look-and-feel" />
     <MESSAGE value="Añadido controlador de fechas para reservar con un maximo de 2 meses y textos de decoración con colores para que sea más sencillo ver los estados" />
     <MESSAGE value="Añadido texto al home y al help" />
     <MESSAGE value="Resuleto bug en la que a veces al hacer la devolución concatenaba el +1 al nçúmero en vez de añadírselo&#10;Mirar como sacar un hook para unir todos los handle devolution" />
@@ -422,6 +439,8 @@
     <MESSAGE value="Primeros comentarios y refactor" />
     <MESSAGE value="Mas comentarios y eliminación del hook de usePopup" />
     <MESSAGE value="Ultimos comentarios y borrado de espacios en blanco" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ultimos comentarios y borrado de espacios en blanco" />
+    <MESSAGE value="Eliminar datos antiguos que no van" />
+    <MESSAGE value="Cambiar a título" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambiar a título" />
   </component>
 </project>

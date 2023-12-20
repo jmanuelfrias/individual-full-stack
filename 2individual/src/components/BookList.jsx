@@ -46,7 +46,7 @@ export const BookList =({ filter }) => {
             <Filter />
             <div className={`book__container ${filter !== "loaned" ? "main__layout" : ""}`}>
                 {showLoading ? (
-                    <LinearProgress color="inherit" />
+                    <LinearProgress className="container__progress"  />
                 ) : (
                     filteredData.length > 0 ? (
                         filteredData.map((book, index) => (

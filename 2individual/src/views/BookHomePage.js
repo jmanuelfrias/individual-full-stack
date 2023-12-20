@@ -4,7 +4,7 @@ import '../styles/Home.css'
 import {BookList} from "../components/BookList";
 import {LibraryContext} from "../context/LibraryContext";
 
-//Pagina inciial de la aplicación con explicaciones y libros más recientes
+//Pagina inicial de la aplicación con explicaciones y libros más recientes
 export const BookHomePage=() =>{
     const { isDarkMode } = useContext(LibraryContext);
     return (

@@ -12,3 +12,7 @@
     max-width: 20%;
     margin: 10px;
 }
+
+.container__progress{
+    color: inherit;
+}

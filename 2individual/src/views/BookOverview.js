@@ -11,7 +11,7 @@ export const BookOverview = () => {
     const { isDarkMode } = useContext(LibraryContext);
     return (
         <div className={`overview main__div  ${isDarkMode ? " overview--dark" : "overview--light"}  `}>
-            <h2 className="center-text overview__header">Available Books</h2>
+            <h2 className="center-text overview__header">Libros Disponibles</h2>
             <BookList />
         </div>
     );
